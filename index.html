@@ -5,41 +5,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Portafolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <link href="styles.css" rel="stylesheet" >
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> <!-- Enlace al conjunto de iconos Font Awesome -->
+
 </head>
 
 <body>
     <header>
-        <nav>
+        <nav class="nav-style animated-nav">
             <ul>
-                <li><a href="#about"><i class="material-icons">engineering</i> Sobre mí</a></li>
+                <li><a href="#about"><i class="material-icons", >engineering</i> Sobre mí</a></li>
                 <li><a href="#projects"><i class="material-icons">badge</i> Proyectos</a></li>
                 <li><a href="#contact"><i class="material-icons">call</i> Contacto</a></li>
             </ul>
-        </nav>
+        </nav>   
     </header>
 
     <section id="about"
         style="background-image: url('images/dark-bg.webp'); background-size: cover; background-position: center;">
-        <h1 class="white-text">Hola, soy Yucli Emmanuel</h1>
+        <h1 class="rainbow-text ">YUCLI EMMANUEL BAZA ORTUÑO</h1>
         <p class="white-text">Desarrollador web con experiencia en HTML, CSS, JavaScript y en BDD.</p>
-        <p class="white-text">Estudiante del Tecnologico Superior de Huetamo, en la carrera de ingenieria en sistemas
+        <p class="white-text">Estudiante egresado del Instituto Tecnologico Superior de Huetamo, en la carrera de ingenieria en sistemas
             computacionales</p>
+            <div class="programming-languages-bar">
+                <div class="language" id="html">
+                  <i class="fab fa-html5"></i>
+                  <span>HTML</span>
+                </div>
+                <div class="language" id="css">
+                  <i class="fab fa-css3-alt"></i>
+                  <span>CSS</span>
+                </div>
+                <div class="language" id="javascript">
+                  <i class="fab fa-js"></i>
+                  <span>JavaScript</span>
+                </div>
+                <div class="language" id="python">
+                  <i class="fab fa-python"></i>
+                  <span>Python</span>
+                </div>
     </section>
 
-    <section id="projects">
+    <section id="projects"
+    style="background-image: url('images/light-bg.webp'); background-size: cover; background-position: center;">
         <h2>Proyectos</h2>
         <div class="gallery">
             <div class="project">
                 <img src="images/logo.png" alt="Proyecto 1">
-                <h3>Proyecto 1</h3>
+                <h3>Sistema para la Administracion de Documentos en el Ejido Villa de Huetamo</h3>
                 <p>Sistema para la administracion de documentos ejidales del ejido villla de Huetamo</p>
             </div>
             <div class="project">
-                <img src="images/proyecto2.png" alt="Proyecto 2">
-                <h3>Proyecto 2</h3>
-                <p>Descripción breve del proyecto 2.</p>
+                <img src="images/Huaracheria.png" alt="Proyecto 2">
+                <h3>Gestor de Huaracheria</h3>
+                <p>Capaz de administrar pedidos de hurache de los clientes, asi como la gestion del pago por par de huarache vendido del trabajador .</p>
             </div>
             <div class="project">
                 <img src="images/proyecto3.png" alt="Proyecto 3">

@@ -117,3 +117,111 @@ footer {
 .white-text {
     color: white;
   }
+
+  
+  .nav-style {
+    background-color: #333;
+    padding: 10px;
+}
+.nav-style ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.nav-style ul li {
+    display: inline;
+}
+
+.animated-nav ul li a {
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+.animated-nav ul li a:hover {
+    color: #ff6347; /* Cambia el color del texto al pasar el mouse */
+    transform: scale(1.1); /* Aumenta el tamaño al pasar el mouse */
+}
+
+.gallery img{
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.1); /* Aumenta el tamaño de la imagen al pasar el mouse */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Agrega una sombra */
+}
+
+html {
+    scroll-behavior: smooth; /* Desplazamiento suave en CSS */
+}
+
+.rainbow-text {
+    color: white;
+    transition: color 0.5s;
+  }
+  
+  .rainbow-text:hover {
+    animation: rainbow 2s infinite;
+  }
+  
+  @keyframes rainbow {
+    0% { color: red; }
+    16% { color: orange; }
+    32% { color: yellow; }
+    48% { color: rgb(40, 168, 40); }
+    64% { color: blue; }
+    80% { color: rgb(99, 10, 163); }
+    100% { color: violet; }
+  }
+
+  .programming-languages-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .language {
+    margin: 0 10px;
+    display: flex;
+    color: #eaeaea;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer; /* Cambia el cursor al pasar sobre los iconos */
+  }
+  
+  .language i,
+  .language span {
+    transition: color 0.3s; /* Agrega una transición suave al cambio de color */
+  }
+  
+  .language i {
+    font-size: 24px;
+  }
+  
+  .language span {
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  
+  /* Estilos para cambiar el color al pasar el mouse */
+  #html:hover i,
+  #html:hover span {
+    color: red;
+  }
+  
+  #css:hover i,
+  #css:hover span {
+    color: blue;
+  }
+  
+  #javascript:hover i,
+  #javascript:hover span {
+    color: yellow;
+  }
+  
+  #python:hover i,
+  #python:hover span {
+    color: green;
+  }
+  
