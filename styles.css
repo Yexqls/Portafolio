@@ -8,10 +8,11 @@ body {
 }
 
 header {
-    background-color: #333;
+    background-color: #0c0202;
     color: #fff;
     padding: 1em 0;
 }
+
 
 nav ul {
     list-style: none;
@@ -48,9 +49,16 @@ section {
 }
 
 .gray-button {
-    background-color: #ccc;
-    color: #333;
-  }
+  background-color: gray;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.gray-button:hover {
+  background-color: black;
+}
+
 
 h1, h2, h3 {
     margin: 0.5em 0;
@@ -120,7 +128,7 @@ footer {
 
   
   .nav-style {
-    background-color: #333;
+    background-color: #070202;
     padding: 10px;
 }
 .nav-style ul {
@@ -132,6 +140,14 @@ footer {
 }
 .nav-style ul li {
     display: inline;
+}
+
+.nav-menu {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .animated-nav ul li a {
@@ -156,7 +172,7 @@ html {
 }
 
 .rainbow-text {
-    color: white;
+    color: rgb(202, 193, 193);
     transition: color 0.5s;
   }
   
@@ -222,6 +238,6 @@ html {
   
   #python:hover i,
   #python:hover span {
-    color: green;
+    color: rgb(23, 202, 23);
   }
   
