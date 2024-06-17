@@ -4,92 +4,477 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Portafolio</title>
-    <link href="styles.css" rel="stylesheet" >
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> <!-- Enlace al conjunto de iconos Font Awesome -->
+    <title>Portafolio</title>
+    <link href="styles.css" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/ca84fea4b3.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
 
 </head>
 
 <body>
-    <header>
-        <nav class="nav-style animated-nav">
-            <ul>
-                <li><a href="#about"><i class="material-icons", >engineering</i> Sobre mí</a></li>
-                <li><a href="#projects"><i class="material-icons">badge</i> Proyectos</a></li>
-                <li><a href="#contact"><i class="material-icons">call</i> Contacto</a></li>
-            </ul>
-        </nav>   
-    </header>
 
     <section id="about"
         style="background-image: url('images/dark-bg.webp'); background-size: cover; background-position: center;">
-        <h1 class="rainbow-text ">YUCLI EMMANUEL BAZA ORTUÑO</h1>
-        <p class="white-text">Desarrollador Full stack con experiencia en HTML, CSS, JavaScript y en BDD.</p>
-        <p class="white-text">Estudiante egresado del Instituto Tecnologico Superior de Huetamo, en la carrera de ingenieria en sistemas
-            computacionales</p>
-            <p class="white-text">Lneguajes con los que trabajo</p>
-            <div class="programming-languages-bar">
-                <div class="language" id="html">
-                  <i class="fab fa-html5"></i>
-                  <span>HTML</span>
-                </div>
-                <div class="language" id="css">
-                  <i class="fab fa-css3-alt"></i>
-                  <span>CSS</span>
-                </div>
-                <div class="language" id="javascript">
-                  <i class="fab fa-js"></i>
-                  <span>JavaScript</span>
-                </div>
-                <div class="language" id="python">
-                  <i class="fab fa-python"></i>
-                  <span>Python</span>
-                </div>
-    </section>
 
-    <section id="projects"
+        <head>
+
+            <style>
+                body {
+                    margin: 0;
+                    font-family: Arial, sans-serif;
+                    background-color: #1a1a2e;
+                    color: white;
+                }
+
+                /*eliminar*/
+                .container {
+                    width: 100%;
+                    margin: 0 auto;
+                    padding: 20px;
+                }
+
+                /*estilos header*/
+                .header {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 20px 0;
+                }
+
+                .header a {
+                    color: white;
+                    text-decoration: none;
+                    margin: 0 15px;
+                    font-size: 1.1em;
+                }
+
+                .header a:hover {
+                    text-decoration: underline;
+                }
+
+                .main-content {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 50px 0;
+                }
+
+                .main-content .text {
+                    max-width: 50%;
+                }
+
+                /*para la letra y dejar espacio*/
+                .main-content h1 {
+                    font-size: 2.5em;
+                    margin-bottom: 50px;
+                    margin-top: 50px;
+                }
+
+                /*clase del boton*/
+                .main-content button {
+                    background-color: white;
+                    color: #1a1a2e;
+                    border: none;
+                    padding: 15px 30px;
+                    font-size: 1em;
+                    cursor: pointer;
+                    margin: 10px 0;
+                    border-radius: 25px 15rem;
+                    box-shadow: 0px 5px 10px rgb(0, 0, 0, .35);
+                    transition: .3s ease;
+
+                }
+
+                .main-content button:hover,
+                .main-content button:focus {
+                    background-color: #667de0;
+                    transition: background-color 0.3s ease;
+                    box-shadow: 0 0 15px dodgerblue,
+                        0 0 45px dodgerblue,
+                        0 0 75px dodgerblue,
+                        0 0 115px dodgerblue;
+
+
+                }
+
+                /*footer de mi pagina*/
+                .footer {
+                    padding: 20px 0;
+                    text-align: center;
+                    background-color: #050031;
+                }
+
+                .contenedor {
+                    margin: 0%;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+
+                /*iconos estilo*/
+                .icono {
+                    text-align: center;
+                    font-size: 25px;
+                    color: rgb(255, 255, 255);
+                    margin: 20px;
+                    border-radius: 50%;
+                    padding: 15px;
+                    box-shadow: 0px 5px 10px rgb(255, 255, 255);
+                    transition: .3s ease;
+                }
+
+
+                .fa-user:hover {
+                    background-color: dodgerblue;
+                    color: white;
+                    box-shadow: 0 0 15px dodgerblue,
+                        0 0 45px dodgerblue,
+                        0 0 75px dodgerblue,
+                        0 0 115px dodgerblue;
+                }
+
+                .fa-book:hover {
+                    background-color: dodgerblue;
+                    color: white;
+                    box-shadow: 0 0 15px dodgerblue,
+                        0 0 45px dodgerblue,
+                        0 0 75px dodgerblue,
+                        0 0 115px dodgerblue;
+                }
+
+                .fa-envelope:hover {
+                    background-color: dodgerblue;
+                    color: white;
+                    box-shadow: 0 0 15px dodgerblue,
+                        0 0 45px dodgerblue,
+                        0 0 75px dodgerblue,
+                        0 0 115px dodgerblue;
+                }
+
+                .fa-arrow-down:hover {
+                    background-color: dodgerblue;
+                    color: white;
+                    box-shadow: 0 0 15px dodgerblue,
+                        0 0 45px dodgerblue,
+                        0 0 75px dodgerblue,
+                        0 0 115px dodgerblue;
+                }
+
+                /*LENGUAJES BACKEND*/
+                .fa-java:hover {
+                    background-color: #e07e66;
+                    color: white;
+                    box-shadow: 0 0 15px #e07e66,
+                        0 0 45px #e07e66,
+                        0 0 75px #e07e66,
+                        0 0 115px #e07e66;
+                }
+
+                .fa-php:hover {
+                    background-color: blueviolet;
+                    color: white;
+                    box-shadow: 0 0 15px blueviolet,
+                        0 0 45px blueviolet,
+                        0 0 75px blueviolet,
+                        0 0 115px blueviolet;
+                }
+
+                .fa-python:hover {
+                    background-color: gold;
+                    color: white;
+                    box-shadow: 0 0 15px gold,
+                        0 0 45px gold,
+                        0 0 75px gold,
+                        0 0 115px gold;
+                }
+
+                /**FRONTEND*/
+                .fa-html5:hover {
+                    background-color: rgb(223, 147, 33);
+                    color: white;
+                    box-shadow: 0 0 15px rgb(223, 147, 33),
+                        0 0 45px rgb(223, 147, 33),
+                        0 0 75px rgb(223, 147, 33),
+                        0 0 115px rgb(223, 147, 33);
+                }
+
+                .fa-js:hover {
+                    background-color: red;
+                    color: white;
+                    box-shadow: 0 0 15px red,
+                        0 0 45px red,
+                        0 0 75px red,
+                        0 0 115px red;
+                }
+
+                .fa-css3:hover {
+                    background-color: rgb(0, 204, 255);
+                    color: white;
+                    box-shadow: 0 0 15px rgb(0, 204, 255),
+                        0 0 45px rgb(0, 204, 255),
+                        0 0 75px rgb(0, 204, 255),
+                        0 0 115px rgb(0, 204, 255);
+                }
+
+
+                /*CONTACTO*/
+                .fa-whatsapp:hover {
+                    background-color: aquamarine;
+                    color: white;
+                    box-shadow: 0 0 15px aquamarine,
+                        0 0 45px aquamarine,
+                        0 0 75px aquamarine,
+                        0 0 115px aquamarine;
+                }
+
+
+                /*Animacion de agrandar*/
+                .me {
+                    display: flex;
+                    justify-content: center;
+                    /*eliminar en caso de poner un carrusel*/
+                    flex-wrap: wrap;
+                    gap: 1em;
+                }
+
+                .me img {
+                    width: 100%;
+                    transition: all 300ms;
+                    position: relative;
+                }
+
+                .me img:hover {
+                    transform: scale(1.10);
+                }
+
+                .footer a {
+                    color: white;
+                    text-decoration: none;
+                }
+
+                /* efecto de texto para iluminra el icono, el focus sirve para la navegacion con teclado*/
+                .nav-links a:hover i,
+                .nav-links a:focus i {
+                    background-color: dodgerblue;
+                    color: white;
+                    box-shadow: 0 0 15px dodgerblue,
+                        0 0 45px dodgerblue,
+                        0 0 75px dodgerblue,
+                        0 0 115px dodgerblue;
+                }
+
+
+                /* cambio texto de color del hover*/
+                .nav-links a:hover,
+                .nav-links a:focus {
+                    color: #667de0;
+                }
+
+                /*iconos de porgramacion*/
+                .contenedor {
+                    margin: 0;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+
+                /*ambio de texto*/
+                .text_color {
+                    color: inherit;
+                    /* Color inicial del texto */
+                    transition: color 0.3s ease, text-shadow 0.3s ease;
+                    /* Transición suave */
+                }
+
+
+                .text_color:hover {
+                    color: #667de0;
+                    text-shadow: 0 0 10px slateblue,
+                        0 0 45px slateblue,
+                        0 0 75px slateblue,
+                        0 0 115px slateblue;
+                }
+
+                /*estilos carrusel*/
+                .carousel-item {
+                    height: 500px;
+                    /* Altura fija del carrusel */
+                    width: 800px;
+                }
+
+                .carousel-item img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    /* Asegura que la imagen cubra el contenedor */
+                }
+            </style>
+        </head>
+
+        <body>
+            <div class="container">
+                <div class="header">
+                    <div class="logo">
+                        <h2>YUCLI EMMANUEL BAZA O.</h2>
+                    </div>
+                    <nav class="nav-style animated-nav nav-links">
+                        <a href="#about"><i class="fa-solid fa-user icono"></i>Sobre mí</a>
+                        <a href="#projects"><i class="fa-solid fa-book icono"></i> Proyectos</a>
+                        <a href="#contact"><i class="fa-solid fa-envelope icono"></i>Contactame</a>
+                    </nav>
+                </div>
+                <i></i>
+                <div class="main-content">
+                    <div class="text">
+                        <h1>Desarrollador <i class="text_color">Full Stack</i> con experiencia en JAVA, PHP, JavaScript
+                            y en BDD.</h1>
+                        <p>Puede ver mis poryecto en GitHub</p>
+                        <a href="https://github.com/Yexqls" target="_blank"><button> <img src="images/github.png"
+                                    alt="github"> GitHub</button></a>
+                        <p>Descarga mi curriculum</p>
+                        <a download="curriculum" href="CV.pdf" ><button> <img src="images/flecha.png"
+                                    alt="github">Descarga</button></a>
+                        <div class="header">
+                            <nav class="nav-style animated-nav nav-links">
+                                <a href="#projects",><i class="fa-solid fa-arrow-down icono"></i>Conozca mas sobre mi</a>
+    
+                            </nav>
+                        </div>
+
+                    </div>
+                    <div class="me">
+                        <img src="images/me_.png" alt="Programador">
+                    </div>
+
+                </div>
+
+            </div>
+        </body>
+
+</html>
+
+
+
+
+</section>
+
+<section id="projects"
+
+
+
     style="background-image: url('images/light-bg.webp'); background-size: cover; background-position: center;">
-        <h2>Proyectos</h2>
-        <div class="gallery">
-            <div class="project">
-                <img src="images/logo.png" alt="Proyecto 1">
-                <h3>Sistema para la Administracion de Documentos en el Ejido Villa de Huetamo</h3>
-                <p>Sistema para la administracion de documentos ejidales del ejido villla de Huetamo</p>
-            </div>
-            <div class="project">
-                <img src="images/Huaracheria.png" alt="Proyecto 2">
-                <h3>Gestor de Huaracheria</h3>
-                <p>Capaz de administrar pedidos de hurache de los clientes, asi como la gestion del pago por par de huarache vendido del trabajador .</p>
-            </div>
-            <div class="project">
-                <img src="images/shop.png" alt="Proyecto 3">
-                <h3>Index-Shop Art</h3>
-                <p> <table>Tienda de ropa online, compra y adquiere la ropa que quieras con Index-Shop</table></p>
+
+
+    <h1 class=" text">Lenguajes de programacion con los que trabajo</h1>
+    <div class="nav_bar">
+        <div class="text">
+            <a href="#"><i class="fa-brands fa-java icono"></i></a>
+            <p>Java</p>
+        </div>
+        <div class="text">
+            <a href="#"><i class="fa-brands fa-php icono"></i></a>
+            <p>PHP</p>
+        </div>
+        <div class="text">
+            <a href="#"><i class="fa-brands fa-python icono"></i></a>
+            <p>python</p>
+        </div>
+    
+    
+    
+    
+    </div>
+    
+    <div class="nav_bar">
+    
+        <a href="#"><i class="fa-brands fa-html5 icono"></i></a>
+        <a href="#"><i class="fa-brands fa-js icono"></i></a>
+        <a href="#"><i class="fa-brands fa-css3 icono"></i></a>
+    
+    
+    
+    </div>
+
+    
+
+    <h2>Proyectos</h2>
+    <div class="me">
+        <div class="project">
+            <img src="images/logo.png" alt="Proyecto 1">
+            <h3>Sistema para la Administracion de Documentos en el Ejido Villa de Huetamo</h3>
+            <p>Sistema para la administracion de documentos ejidales del ejido villla de Huetamo</p>
+        </div>
+        <div class="project">
+            <img src="images/Huaracheria.png" alt="Proyecto 2">
+            <h3>Gestor de Huaracheria</h3>
+            <p>Capaz de administrar pedidos de hurache de los clientes, asi como la gestion del pago por par de
+                huarache vendido del trabajador .</p>
+        </div>
+        <div class="project">
+            <img src="images/shop.png" alt="Proyecto 3">
+            <h3>Index-Shop Art</h3>
+            <p>
+            <table>Tienda de ropa online, compra y adquiere la ropa que quieras con Index-Shop</table>
+            </p>
+        </div>
+    </div>
+</section>
+
+
+<div class="container text-center">
+    <div class="row">
+        <div class="col">
+            <h3>Sistema para la Administracion de Documentos en el Ejido Villa de Huetamo</h3>
+            <p>Sistema para la administracion de documentos ejidales del ejido villla de Huetamo</p>
+        </div>
+        <div class="col">
+            <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/tienda_ropa.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/tienda_ropa_2.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/tienda_ropa_3.png" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
         </div>
-    </section>
+    </div>
+</div>
+
+<footer class="footer">
 
     <section id="contact">
         <h2>Contacto</h2>
-        <form action="https://formspree.io/f/xkndlynk" method="POST">
-            <label class="white-text" for="name">Nombre:</label>
-            <input type="text" id="name" name="name" required>
-            <label class="white-text" for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label class="white-text" for="message">Mensaje:</label>
-            <textarea id="message" name="message" required></textarea>
-            <button class="white-text gray-button" type="submit">Enviar</button>
+        <a href="#"><i class="fa-brands fa-x icono"></i></a>
+        <a href="https://wa.me/524351218024?" , target="_blank">
+            <i class="fa-brands fa-whatsapp icono"></i> Envíame un Whatsapp</a>
 
-
-
-
-        </form>
     </section>
+    <p>&copy; 2024 [Yucli Emmanuel Baaza Ortuño]. Todos los derechos reservados.</p>
 
-    <footer>
-        <p>&copy; 2024 [Yucli Emmanuel Baaza Ortuño]. Todos los derechos reservados.</p>
-    </footer>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
