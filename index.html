@@ -31,7 +31,7 @@
 
                 /*letra p estilo*/
                 .text p {
-                    margin-top: 15px;
+                    margin: 15px;
                     /*padding: 1rem;*/
 
                 }
@@ -41,14 +41,12 @@
                     width: 100%;
                     margin: 0 auto;
 
-
-
                 }
 
                 /*Efecto cristal para conteiner*/
                 .container-col {
                     /*opacidad*/
-                    background-color: rgb(255, 255, 255, 0.1);
+                    background-color: rgb(255, 255, 255, 0.02);
                     height: 100%;
 
                     backdrop-filter: blur(20px);
@@ -84,7 +82,7 @@
                     display: flex;
                     align-items: center;
                     justify-content: space-evenly;
-                    padding: 50px 0;
+                    padding: 25px 0;
                 }
 
                 .main-content .text {
@@ -111,11 +109,20 @@
                     padding: 15px 30px;
                     font-size: 1em;
                     cursor: pointer;
-                    margin: 10px 0;
+                    margin: 10px;
                     /*border-radius: 25px 15rem;*/
                     border-radius: 40px;
-                    box-shadow: 0px 5px 10px rgba(255, 253, 253, 0.35);
+                    box-shadow: 0px 5px 10px rgba(255, 253, 253, 0.5);
                     transition: .3s ease;
+
+                }
+/*Estilo imagen redonda*/
+                .img_top img {
+                    width: 85px;
+                    height: 90px;
+                    border-radius: 50%;
+                    border: solid 1px rgb(255, 255, 255, 1);
+                    margin: 15px 20px;
 
                 }
 
@@ -127,11 +134,7 @@
                         0 0 45px dodgerblue,
                         0 0 75px dodgerblue,
                         0 0 115px dodgerblue;
-
-
                 }
-
-
 
 
 
@@ -271,10 +274,7 @@
                     transform: scale(1.10);
                 }
 
-                .footer a {
-                    color: white;
-                    text-decoration: none;
-                }
+
 
                 /* efecto de texto para iluminra el icono, el focus sirve para la navegacion con teclado*/
                 .nav-links a:hover i,
@@ -311,6 +311,19 @@
                         0 0 115px slateblue;
                 }
 
+                .text_color_other {
+                    color: inherit;
+                    transition: color 0.3s ease, text-shadow 0.3s ease;
+                }
+
+                .text_color_other:hover {
+                    color: rgb(255, 94, 0);
+                    text-shadow: 0 0 10px rgb(255, 94, 0),
+                        0 0 45px rgb(255, 94, 0),
+                        0 0 75px rgb(255, 94, 0),
+                        0 0 115px rgb(255, 94, 0);
+                }
+
                 /* Iconos de programacion*/
                 .nav_bar {
                     display: flex;
@@ -330,6 +343,7 @@
                     width: 100%;
                     height: 100%;
                     object-fit: cover;
+                    padding: 50px 0;
                     /* Asegura que la imagen cubra el contenedor */
                 }
 
@@ -345,18 +359,22 @@
                     padding-top: 10rem;
                     text-align: center;
                     background-color: #050031;
+                    display: flex;
                 }
             </style>
         </head>
 
         <body>
             <div class="container">
+
                 <div class="header">
-                    <div>
-                        <h2>YUCLI EMMANUEL BAZA O.</h2>
+                    <div class="img_top">
+                        <h2> <img src="images/yo.jpg" alt="Yo">Yucli Emanuel </h2>
+
                     </div>
                     <div>
                         <nav class="nav-links">
+
                             <a href="#about"><i class="fa-solid fa-user icono"></i>Sobre mí</a>
                             <a href="#projects"><i class="fa-solid fa-book icono"></i> Proyectos</a>
                             <a href="#contact"><i class="fa-solid fa-envelope icono"></i>Contactame</a>
@@ -368,14 +386,15 @@
                 <div class="main-content">
                     <div class="text">
                         <div>
-                            <h1>Desarrollador <i class="text_color">Full Stack</i> con experiencia en JAVA, PHP,
-                                JavaScript
-                                y en BDDL.</h1>
+                            <h1>Soy un desarrollador <i class="text_color">Back-End</i> de <i
+                                    class="text_color_other">Java</i>, apasionado por las base de datos y programacion.
+                            </h1>
                         </div>
 
                         <p>Puede ver mis poryecto en GitHub</p>
                         <a href="https://github.com/Yexqls" target="_blank"><button> <img src="images/github.png"
                                     alt="github"> Git Hub</button></a>
+                        <a href="https://www.linkedin.com/in/yucli-emmanuel-baza-ortu%C3%B1o-b813912a1/" target="_blank"><button><img src="images/linkedin.png" alt=""> Linkenid</button></a>
                         <p>Descarga mi curriculum</p>
                         <a download="curriculum" href="CV.pdf"><button> <img src="images/flecha.png" alt="github">
                                 Descarga</button></a>
@@ -578,7 +597,7 @@
 
     <section id="contact">
         <h2>Contacto</h2>
-        <div class="header">
+        <div class="">
             <i>asads</i>
         </div>
         <div>
