@@ -85,6 +85,39 @@
                     padding: 25px 0;
                 }
 
+                .main-content-butom {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-evenly;
+                    padding: 25px 0;
+                }
+
+                .main-content-butom button:hover,
+                .main-content-butom button:focus {
+                    background-color: #22d473;
+                    transition: background-color 0.3s ease;
+                    box-shadow: 0 0 15px #22d473,
+                        0 0 45px #22d473,
+                        0 0 75px #22d473,
+                        0 0 115px #22d473;
+                }
+
+                .main-content-butom button {
+                    background-color: white;
+                    color: #1a1a2e;
+                    border: none;
+                    padding: 15px 30px;
+                    font-size: 1em;
+                    cursor: pointer;
+                    margin: 10px;
+                    /*border-radius: 25px 15rem;*/
+                    border-radius: 40px;
+                    box-shadow: 0px 5px 10px rgba(255, 253, 253, 0.5);
+                    transition: .3s ease;
+
+                }
+
+
                 .main-content .text {
                     max-width: 50%;
                 }
@@ -116,7 +149,8 @@
                     transition: .3s ease;
 
                 }
-/*Estilo imagen redonda*/
+
+                /*Estilo imagen redonda*/
                 .img_top img {
                     width: 85px;
                     height: 90px;
@@ -245,14 +279,7 @@
 
 
                 /*CONTACTO*/
-                .fa-whatsapp:hover {
-                    background-color: aquamarine;
-                    color: white;
-                    box-shadow: 0 0 15px aquamarine,
-                        0 0 45px aquamarine,
-                        0 0 75px aquamarine,
-                        0 0 115px aquamarine;
-                }
+
 
 
                 /*Animacion de agrandar*/
@@ -334,16 +361,16 @@
 
                 /*estilos carrusel*/
                 .carousel-item {
-                    height: 500px;
-                    /* Altura fija del carrusel */
-                    width: 800px;
+                    width: 100%;
+                    height: 100%;
+                    padding: 50px 0;
                 }
 
                 .carousel-item img {
                     width: 100%;
                     height: 100%;
                     object-fit: cover;
-                    padding: 50px 0;
+                    padding: 50px 25px;
                     /* Asegura que la imagen cubra el contenedor */
                 }
 
@@ -357,9 +384,36 @@
                 /*footer de mi pagina*/
                 .footer {
                     padding-top: 10rem;
-                    text-align: center;
                     background-color: #050031;
-                    display: flex;
+
+                }
+
+
+                #emailForm label {
+                    display: block;
+                    margin-bottom: 10px;
+                    text-align: left;
+                }
+
+                #emailForm input[type="email"],
+                #emailForm button[type="submit"] {
+                    padding: 10px;
+                    margin-bottom: 15px;
+                    border: 1px solid #ccc;
+                    border-radius: 5px;
+                    box-sizing: border-box;
+                    /* Asegura que el padding se incluya en el ancho total */
+                }
+
+                #emailForm button[type="submit"] {
+                    background-color: #007bff;
+                    color: #fff;
+                    border: none;
+                    cursor: pointer;
+                }
+
+                #emailForm button[type="submit"]:hover {
+                    background-color: #0056b3;
                 }
             </style>
         </head>
@@ -394,9 +448,10 @@
                         <p>Puede ver mis poryecto en GitHub</p>
                         <a href="https://github.com/Yexqls" target="_blank"><button> <img src="images/github.png"
                                     alt="github"> Git Hub</button></a>
-                        <a href="https://www.linkedin.com/in/yucli-emmanuel-baza-ortu%C3%B1o-b813912a1/" target="_blank"><button><img src="images/linkedin.png" alt=""> Linkenid</button></a>
+                        <a href="https://www.linkedin.com/in/yucli-emmanuel-baza-ortu%C3%B1o-b813912a1/"
+                            target="_blank"><button><img src="images/linkedin.png" alt=""> Linkenid</button></a>
                         <p>Descarga mi curriculum</p>
-                        <a download="curriculum" href="CV.pdf"><button> <img src="images/flecha.png" alt="github">
+                        <a download="curriculum" href="CV.pdf"><button> <img src="images/flecha.png" alt="flecha">
                                 Descarga</button></a>
                         <div class="header">
                             <nav class="nav-links">
@@ -597,14 +652,26 @@
 
     <section id="contact">
         <h2>Contacto</h2>
-        <div class="">
-            <i>asads</i>
+        <div class="main-content">
+            <div>
+                <i>Enviame un correo</i>
+            </div>
+            <div>
+                <form id="emailForm">
+                    <label for="correo">Correo electrónico:</label>
+                    <input type="email" id="correo" name="correo" placeholder="yucli_baz@dominio.com" required>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+            <div>asda</div>
         </div>
-        <div>
-            <a href="https://wa.me/524351218024?" , target="_blank">
-                <i class="fa-brands fa-whatsapp icono"></i></a>
-            <p>Envia un Whatsapp</p>
+        <div class="main-content-butom">
+
+            <a href="https://wa.me/524351218024?" target="_blank"><button> <img src="images/whatsapp.png"
+                        alt="Whatsapp">
+                    Whatsapp</button></a>
         </div>
+        <div>asda</div>
 
         <p>&copy; 2024 [Yucli Emmanuel Baaza Ortuño]. Todos los derechos reservados.</p>
 
