@@ -94,6 +94,7 @@ body {
   padding: 25px 0;
 }
 
+/*ver si puedo usar mas esta clase*/
 .main-content-butom button:hover,
 .main-content-butom button:focus {
   background-color: #22d473;
@@ -483,6 +484,11 @@ body {
 
 #emailForm button:hover {
   background-color: #005bb5;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 0 15px #005bb5,
+    0 0 45px #005bb5,
+    0 0 75px #005bb5,
+    0 0 115px #005bb5;
 }
 
 /* Estilo de los labels */
