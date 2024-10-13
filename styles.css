@@ -63,9 +63,9 @@ body {
 /*estilos header*/
 .header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  padding: 20px 0;
+  padding: 10px 0;
 }
 
 .header a {
@@ -158,7 +158,7 @@ body {
   width: 85px;
   height: 90px;
   border-radius: 50%;
-  border: solid 1px rgb(255, 255, 255, 1);
+  border: solid 0.5px rgb(255, 255, 255, 1);
   margin: 15px 20px;
 
 }
@@ -513,7 +513,7 @@ body {
 
 
 /* Mobile Styles */
-@media (max-width: 768px) {
+ @media (max-width: 768px) {
   .container {
     padding: 10px;
   }
@@ -570,7 +570,7 @@ body {
   .language:last-child {
     margin-bottom: 0;
   }
-}
+} 
 
 /*cambiar el color al boton cuando tenga un tema oscuro en la pc o movil
  @media screen and (prefers-color-scheme:dark){
