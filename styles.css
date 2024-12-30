@@ -1,584 +1,273 @@
-/* Scroll */
-html {
-  scroll-behavior: smooth;
-}
-
-
-/* Color de fondos */
-section {
-  color: white;
-  padding: 2em 1em;
-  text-align: center;
-}
-
-#about {
-  background-color: #050031;
-}
-
-#projects {
-  background-color: #050031;
-}
-
-#contact {
-  background-color: #050031;
-}
-
-/*Estilos para estructuras en especifico*/
+/* Estilo general */
 body {
+  font-family: "Arial", sans-serif;
+  background-color: #ffffff;
+  padding: 20px;
   margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #1a1a2e;
-  color: white;
+  /* Asegúrate de que el margen del body no cause desplazamiento */
+  box-sizing: border-box;
+  /* Asegura que el padding y border se incluyan en el tamaño total */
 }
 
-/*letra p estilo*/
-.text p {
-  margin: 15px;
-  /*padding: 1rem;*/
-
+/* Encabezado */
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #1f2937;
+  margin-bottom: 20px;
+  border-bottom: 4px solid #7c3aed;
+  display: inline-block;
 }
 
-/*eliminar*/
+/* Contenedor principal */
 .container {
-  width: 100%;
+  border: 4px solid #7c3aed;
+  background-color: #ffffff;
+  padding: 15px;
+  max-width: 1750px;
   margin: 0 auto;
-
+  /* Centra horizontalmente el contenedor */
+  box-shadow: 0 4px 6px rgba(247, 241, 241, 0.1);
+  box-sizing: border-box;
+  /* Evita que el padding y border alteren el tamaño */
 }
 
-/*Efecto cristal para conteiner*/
-.container-col {
-  /*opacidad*/
-  background-color: rgb(255, 255, 255, 0.02);
-  height: 100%;
-
-  backdrop-filter: blur(20px);
-  border: solid 1px rgb(255, 255, 255, 0.5);
-  border-radius: 5px;
-  width: 95%;
-  margin: 30px auto;
-
-}
-
-
-/*estilos header*/
-.header {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 10px 0;
-}
-
-.header a {
-  color: white;
-  text-decoration: none;
-  padding-left: 1rem;
-  margin: 0 15px;
-  font-size: 1.1em;
-}
-
-.header a:hover {
-  text-decoration: underline;
-}
-
-.main-content {
+/* Flexbox para imagen y texto */
+.content {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
-  padding: 25px 0;
+  gap: 20px;
 }
 
-.main-content-butom {
-  display: flex;
+/* Imagen */
+.profile-img {
+  width: 400px;
+  height: 500px;
+  border-radius: 10px;
+  border: 2px solid #e5e7eb;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Texto */
+.text {
+  flex: 1;
+  color: #4b5563;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Resaltado */
+.highlight {
+  color: #7c3aed;
+  font-weight: bold;
+}
+
+/* Personalización del scrollbar */
+::-webkit-scrollbar {
+  width: 15px;
+  /* Ancho del scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+  /* Color de fondo del track */
+  border-radius: 10px;
+  /* Esquinas redondeadas */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #7c3aed;
+  /* Color del thumb */
+  border-radius: 10px;
+  border: 3px solid #f1f1f1;
+  /* Borde del thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #5a2a9e;
+  /* Color al pasar el ratón */
+}
+
+.botones-iconos {
+  display: block;
   align-items: center;
-  justify-content: space-evenly;
-  padding: 25px 0;
-}
-
-/*ver si puedo usar mas esta clase*/
-.main-content-butom button:hover,
-.main-content-butom button:focus {
-  background-color: #22d473;
-  transition: background-color 0.3s ease;
-  box-shadow: 0 0 15px #22d473,
-    0 0 45px #22d473,
-    0 0 75px #22d473,
-    0 0 115px #22d473;
-}
-
-.main-content-butom button {
-  background-color: white;
-  color: #1a1a2e;
-  border: none;
-  padding: 15px 30px;
-  font-size: 1em;
-  cursor: pointer;
-  margin: 10px;
-  /*border-radius: 25px 15rem;*/
-  border-radius: 40px;
-  box-shadow: 0px 5px 10px rgba(255, 253, 253, 0.5);
-  transition: .3s ease;
-
-}
-
-
-.main-content .text {
-  max-width: 50%;
-}
-
-.text h1 {
   text-align: center;
-
+  margin: auto;
+  font-size: 25px;
 }
-
-/*para la letra y dejar espacio*/
-.main-content h1 {
-  font-size: 2.5em;
-  margin-bottom: 50px;
-  margin-top: 50px;
-}
-
-/*clase del boton*/
-.main-content button {
-  background-color: white;
-  color: #1a1a2e;
-  border: none;
-  padding: 15px 30px;
-  font-size: 1em;
-  cursor: pointer;
-  margin: 10px;
-  /*border-radius: 25px 15rem;*/
-  border-radius: 40px;
-  box-shadow: 0px 5px 10px rgba(255, 253, 253, 0.5);
-  transition: .3s ease;
-
-}
-
-/*Estilo imagen redonda*/
-.img_top img {
-  width: 85px;
-  height: 90px;
-  border-radius: 50%;
-  border: solid 0.5px rgb(255, 255, 255, 1);
-  margin: 15px 20px;
-
-}
-
-.main-content button:hover,
-.main-content button:focus {
-  background-color: #667de0;
-  transition: background-color 0.3s ease;
-  box-shadow: 0 0 15px dodgerblue,
-    0 0 45px dodgerblue,
-    0 0 75px dodgerblue,
-    0 0 115px dodgerblue;
-}
-
-
-.main-content button:hover,
-.main-content button:focus {
-  background-color: #667de0;
-  transition: background-color 0.3s ease;
-  box-shadow: 0 0 15px dodgerblue,
-    0 0 45px dodgerblue,
-    0 0 75px dodgerblue,
-    0 0 115px dodgerblue;
-}
-
-
 
 /*iconos estilo*/
 .icono {
   text-align: center;
-  font-size: 25px;
-  color: rgb(255, 255, 255);
+  color: rgb(10, 10, 10);
   margin: 20px;
-  border-radius: 50%;
   padding: 15px;
   box-shadow: 0px 5px 10px rgb(255, 255, 255);
-  transition: .3s ease;
-}
-
-/*YO*/
-.fa-user:hover {
-  background-color: dodgerblue;
-  color: white;
-  box-shadow: 0 0 15px dodgerblue,
-    0 0 45px dodgerblue,
-    0 0 75px dodgerblue,
-    0 0 115px dodgerblue;
-}
-
-.fa-book:hover {
-  background-color: dodgerblue;
-  color: white;
-  box-shadow: 0 0 15px dodgerblue,
-    0 0 45px dodgerblue,
-    0 0 75px dodgerblue,
-    0 0 115px dodgerblue;
-}
-
-.fa-envelope:hover {
-  background-color: dodgerblue;
-  color: white;
-  box-shadow: 0 0 15px dodgerblue,
-    0 0 45px dodgerblue,
-    0 0 75px dodgerblue,
-    0 0 115px dodgerblue;
-}
-
-.fa-arrow-down:hover {
-  background-color: dodgerblue;
-  color: white;
-  box-shadow: 0 0 15px dodgerblue,
-    0 0 45px dodgerblue,
-    0 0 75px dodgerblue,
-    0 0 115px dodgerblue;
+  transition: 0.3s ease;
 }
 
 /*LENGUAJES BACKEND*/
 .fa-java:hover {
   background-color: #e07e66;
   color: white;
-  box-shadow: 0 0 15px #e07e66,
-    0 0 45px #e07e66,
-    0 0 75px #e07e66,
+  box-shadow: 0 0 15px #e07e66, 0 0 45px #e07e66, 0 0 75px #e07e66,
     0 0 115px #e07e66;
 }
 
 .fa-php:hover {
   background-color: blueviolet;
   color: white;
-  box-shadow: 0 0 15px blueviolet,
-    0 0 45px blueviolet,
-    0 0 75px blueviolet,
+  box-shadow: 0 0 15px blueviolet, 0 0 45px blueviolet, 0 0 75px blueviolet,
     0 0 115px blueviolet;
+}
+
+.fa-laravel:hover {
+  background-color: rgb(253, 79, 60);
+  color: white;
+  box-shadow: 0 0 15px rgb(253, 79, 60), 0 0 45px rgb(253, 79, 60),
+    0 0 75px rgb(253, 79, 60), 0 0 115px rgb(253, 79, 60);
 }
 
 .fa-python:hover {
   background-color: gold;
   color: white;
-  box-shadow: 0 0 15px gold,
-    0 0 45px gold,
-    0 0 75px gold,
-    0 0 115px gold;
+  box-shadow: 0 0 15px gold, 0 0 45px gold, 0 0 75px gold, 0 0 115px gold;
 }
 
 /**FRONTEND*/
 .fa-html5:hover {
   background-color: rgb(223, 147, 33);
   color: white;
-  box-shadow: 0 0 15px rgb(223, 147, 33),
-    0 0 45px rgb(223, 147, 33),
-    0 0 75px rgb(223, 147, 33),
-    0 0 115px rgb(223, 147, 33);
+  box-shadow: 0 0 15px rgb(223, 147, 33), 0 0 45px rgb(223, 147, 33),
+    0 0 75px rgb(223, 147, 33), 0 0 115px rgb(223, 147, 33);
 }
 
 .fa-js:hover {
-  background-color: red;
+  background-color: rgb(218, 105, 1);
   color: white;
-  box-shadow: 0 0 15px red,
-    0 0 45px red,
-    0 0 75px red,
-    0 0 115px red;
+  box-shadow: 0 0 15px rgb(218, 105, 1), 0 0 45px rgb(218, 105, 1),
+    0 0 75px rgb(218, 105, 1), 0 0 115px rgb(218, 105, 1);
 }
 
 .fa-css3:hover {
   background-color: rgb(0, 204, 255);
   color: white;
-  box-shadow: 0 0 15px rgb(0, 204, 255),
-    0 0 45px rgb(0, 204, 255),
-    0 0 75px rgb(0, 204, 255),
-    0 0 115px rgb(0, 204, 255);
+  box-shadow: 0 0 15px rgb(0, 204, 255), 0 0 45px rgb(0, 204, 255),
+    0 0 75px rgb(0, 204, 255), 0 0 115px rgb(0, 204, 255);
 }
 
-
-/*CONTACTO*/
-
-
-
-/*Animacion de agrandar*/
-.me {
-  display: flex;
-  justify-content: center;
-  /*investigar y quitars*/
-  flex-wrap: wrap;
-  gap: 1em;
-}
-
-.me img {
-  width: 100%;
-  transition: all 300ms;
-  position: relative;
-}
-
-.me img:hover {
-  transform: scale(1.10);
-}
-
-
-
-/* efecto de texto para iluminra el icono, el focus sirve para la navegacion con teclado*/
-.nav-links a:hover i,
-.nav-links a:focus i {
-  background-color: dodgerblue;
+.fa-github:hover {
+  background: linear-gradient(
+    45deg,
+    rgb(0, 204, 255),
+    rgb(255, 105, 180),
+    rgb(50, 205, 50)
+  );
+  /* Gradiente de tres colores */
   color: white;
-  box-shadow: 0 0 15px dodgerblue,
-    0 0 45px dodgerblue,
-    0 0 75px dodgerblue,
-    0 0 115px dodgerblue;
+  box-shadow: 0 0 15px rgb(0, 204, 255), 0 0 45px rgb(255, 105, 180),
+    0 0 75px rgb(50, 205, 50), 0 0 115px rgb(0, 204, 255);
 }
 
-
-/* cambio texto de color del hover*/
-.nav-links a:hover,
-.nav-links a:focus {
-  color: #667de0;
+.fa-square-whatsapp:hover {
+  background-color: #22d473;
+  color: white;
+  box-shadow: 0 0 15px #22d473, 0 0 45px #22d473, 0 0 75px #22d473,
+    0 0 115px #22d473;
 }
 
-/*cambio de texto*/
-.text_color {
-  color: inherit;
-  /* Color inicial del texto */
-  transition: color 0.3s ease, text-shadow 0.3s ease;
+.fa-linkedin:hover {
+  background-color: #0274b3;
+  color: white;
+  box-shadow: 0 0 15px #0274b3, 0 0 45px #0274b3, 0 0 75px #0274b3,
+    0 0 115px #0274b3;
+}
+
+.card {
+  border: 4px solid #5a2a9e;
+  flex: 50%;
+  margin-right: 40px;
+  margin-left: 40px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
   /* Transición suave */
 }
 
-
-.text_color:hover {
-  color: #667de0;
-  text-shadow: 0 0 10px slateblue,
-    0 0 45px slateblue,
-    0 0 75px slateblue,
-    0 0 115px slateblue;
+.card:hover {
+  transform: scale(1.04);
+  /* Escala de la tarjeta al pasar el mouse */
 }
 
-.text_color_other {
-  color: inherit;
-  transition: color 0.3s ease, text-shadow 0.3s ease;
+.card .contenido {
+  flex-grow: 1;
+  /* aumenta y decrementa su tamaño*/
+  flex-shrink: 1;
 }
 
-.text_color_other:hover {
-  color: rgb(255, 94, 0);
-  text-shadow: 0 0 10px rgb(255, 94, 0),
-    0 0 45px rgb(255, 94, 0),
-    0 0 75px rgb(255, 94, 0),
-    0 0 115px rgb(255, 94, 0);
+.img-contenido {
+  width: auto;
+  height: auto;
 }
 
-/* Iconos de programacion*/
-.nav_bar {
+.cards {
   display: flex;
-  justify-content: center;
+}
+
+.Redes {
+  text-align: center;
   align-items: center;
-  padding: 10px;
+  padding: auto;
+  margin: auto;
+  font-size: 25px;
 }
 
-/*estilos carrusel*/
-.carousel-item {
-  width: 100%;
-  height: 100%;
-  padding: 50px 0;
-}
+/* RESPONSIVIDAD */
+@media screen and (max-width: 768px) {
+  body {
+    padding: 10px;
+    /* Reduce el padding general en pantallas pequeñas */
+  }
 
-.carousel-item img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  padding: 50px 25px;
-  /* Asegura que la imagen cubra el contenedor */
-}
+  .content {
+    flex-direction: column;
+    /* Cambia a columna */
+    text-align: center;
+    /* Centra el texto */
+  }
 
+  .profile-img {
+    margin-bottom: 15px;
+    /* Espacio entre imagen y texto */
+    width: auto;
+    height: auto;
+  }
 
-/*PADDING del texto*/
-.container-padding {
-  margin: 50px 9rem;
-}
+  .title {
+    text-align: center;
+  }
 
-
-/*footer de mi pagina*/
-.footer {
-  padding-top: 10rem;
-  background-color: #050031;
-
-}
-
-
-#emailForm label {
-  display: block;
-  margin-bottom: 10px;
-  text-align: left;
-}
-
-#emailForm input[type="email"],
-#emailForm button[type="submit"] {
-  padding: 10px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-sizing: border-box;
-  /* Asegura que el padding se incluya en el ancho total */
-}
-
-#emailForm button[type="submit"] {
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-}
-
-#emailForm button[type="submit"]:hover {
-  background-color: #0056b3;
-}
-
-
-
-
-
-
-/*Mejorara*/
-/* Estilos del formulario */
-#emailForm {
-  background-color: rgb(255, 255, 255, 0.02);
-  backdrop-filter: blur(20px);
-  border: solid 1px rgb(255, 255, 255, 0.5);
-  border-radius: 5px;
-  margin: 30px auto;
-  width: 100%;
-  max-width: 500px;
-  margin: 0 auto;
-  padding: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Estilos generales de los inputs y textarea */
-#emailForm input,
-#emailForm textarea {
-  width: 100%;
-  padding: 10px;
-  margin-top: 8px;
-  margin-bottom: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 14px;
-  box-sizing: border-box;
-}
-
-/* Estilos del botón */
-#emailForm button {
-  width: 250px;
-  /* Ajusta el ancho al contenido */
-  padding: 10px 20px;
-  /* Agrega más espacio a los lados */
-  background-color: #0066cc;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  font-size: 16px;
-  cursor: pointer;
-  display: block;
-  /* Hace que el botón ocupe toda la fila */
-  margin: 0 auto;
-  /* Centra el botón horizontalmente */
-}
-
-
-#emailForm button:hover {
-  background-color: #005bb5;
-  transition: background-color 0.3s ease;
-  box-shadow: 0 0 15px #005bb5,
-    0 0 45px #005bb5,
-    0 0 75px #005bb5,
-    0 0 115px #005bb5;
-}
-
-/* Estilo de los labels */
-#emailForm label {
-  font-weight: bold;
-  font-size: 14px;
-  display: block;
-  margin-bottom: 5px;
-}
-
-/* Estilos para el área de texto (textarea) */
-#emailForm textarea {
-  resize: vertical;
-}
-
-/* Efecto de enfoque (focus) */
-
-
-
-
-
-
-
-/* Mobile Styles */
- @media (max-width: 768px) {
   .container {
-    padding: 10px;
+    padding: 15px;
+    /* Reduce el padding del contenedor en dispositivos pequeños */
   }
 
-  .header {
-    flex-flow: row wrap;
-    text-align: center;
+  .botones-iconos {
+    font-size: 15px;
+    margin: 10px;
   }
 
-  .header .logo {
-    flex: 1 1 100%;
-    text-align: center;
-    margin-bottom: 10px;
+  .Redes {
+    font-size: 15px;
+    margin: 10px;
   }
 
-  .nav-links {
-    display: flex;
-    flex: 1 1 100%;
-    justify-content: center;
+  .card {
+    margin: 10px;
   }
 
-  .nav-links a {
-    margin: 0 10px;
-    text-align: center;
-  }
-
-  .main-content {
+  .cards {
     flex-direction: column;
   }
-
-  .main-content .text,
-  .main-content .me {
-    max-width: 100%;
-    text-align: center;
-  }
-
-  .main-content h1 {
-    font-size: 1.8em;
-  }
-
-  .main-content button {
-    width: 100%;
-    padding: 10px;
-  }
-
-  .programming-languages-bar {
-    flex-direction: column;
-  }
-
-  .language {
-    margin-bottom: 10px;
-  }
-
-  .language:last-child {
-    margin-bottom: 0;
-  }
-} 
-
-/*cambiar el color al boton cuando tenga un tema oscuro en la pc o movil
- @media screen and (prefers-color-scheme:dark){
-  
-  .main-content button:hover {
-    background-color: #74e066;
-    transition: background-color 0.3s ease;
-
 }
-}
-*/
