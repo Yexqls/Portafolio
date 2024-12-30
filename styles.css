@@ -285,6 +285,14 @@ body {
   font-size: 25px;
 }
 
+
+.link{
+  color: #7c3aed;
+}
+.link:hover{
+  color: #0a58cd;
+}
+
 /* RESPONSIVIDAD */
 @media screen and (max-width: 768px) {
   body {
@@ -294,7 +302,7 @@ body {
   .content {
     flex-direction: column;
     /* Cambia a columna */
-    text-align: center;
+    text-align: justify;
   }
 
   .profile-img {
