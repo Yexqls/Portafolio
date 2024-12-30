@@ -8,14 +8,21 @@ body {
   box-sizing: border-box;
 }
 
+.see-boton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .see-code-button {
-  background-color: #663399;
+  background-color: #7c3aed;
   border: 2px solid #000000;
   color: #fff;
   padding: 10px 20px;
   font-size: 16px;
-/*   border-radius: 5px;
- */  cursor: pointer;
+  /*   border-radius: 5px;
+ */
+  cursor: pointer;
   transition: 0.3s;
 }
 
@@ -24,7 +31,6 @@ body {
   border-color: #aaa;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
 }
-
 
 /* Encabezado */
 .title {
@@ -71,7 +77,6 @@ body {
   line-height: 1.6;
   padding: 30px;
 }
-
 
 /* Resaltado */
 .highlight {
@@ -227,11 +232,10 @@ body {
     0 0 115px #006dbe;
 }
 
-.fa-file-ico:hover{
+.fa-file-ico:hover {
   background-color: #aaa;
   color: white;
-  box-shadow: 0 0 15px #aaa, 0 0 45px #aaa, 0 0 75px #aaa,
-    0 0 115px #aaa;
+  box-shadow: 0 0 15px #aaa, 0 0 45px #aaa, 0 0 75px #aaa, 0 0 115px #aaa;
 }
 
 .card {
@@ -256,11 +260,10 @@ body {
   flex-shrink: 1;
 }
 
-.tecnologias{
-  border-radius: 30px; 
+.tecnologias {
+  border-radius: 30px;
   margin-right: 5px;
   margin-bottom: 5px;
-
 }
 
 .img-contenido {
@@ -279,7 +282,6 @@ body {
   margin: auto;
   font-size: 25px;
 }
-
 
 /* RESPONSIVIDAD */
 @media screen and (max-width: 768px) {
