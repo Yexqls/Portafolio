@@ -14,22 +14,24 @@ body {
   align-items: center;
 }
 
-.see-code-button {
-  background-color: #7c3aed;
-  border: 2px solid #000000;
-  color: #fff;
+.offset {
+  --color: #7c3aed;
+  --hover: #552277;
+  /* inset es la 2 sombra */
+  box-shadow: 0.3em 0.3em 0 0 var(--color), inset 0.3em 0.3em 0 0 var(--color);
   padding: 10px 20px;
+  border: none;
+  background: transparent;
+  color: black;
   font-size: 16px;
-  /*   border-radius: 5px;
- */
   cursor: pointer;
-  transition: 0.3s;
+  transition: box-shadow 0.3s ease, transform 0.3s ease; /* Agregamos box-shadow aquí */
 }
 
-.see-code-button:hover {
-  background-color: #552277;
-  border-color: #aaa;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+.offset:hover, .offset:focus {
+  color: white;
+  box-shadow: 0 0 0 0 var(--hover), inset 6em 3.5em 0 0 var(--hover);
+  transform: scale(1.05); /* También puedes usar transform para dar un efecto adicional */
 }
 
 /* Encabezado */
@@ -93,11 +95,9 @@ body {
 }
 .subtitulo {
   font-weight: normal;
-  font-size: 1.1rem;
   margin-bottom: 10px;
 }
 .descripcion {
-  font-size: 1rem;
   margin-bottom: 10px;
 }
 
@@ -264,6 +264,8 @@ body {
   border-radius: 30px;
   margin-right: 5px;
   margin-bottom: 5px;
+  color: white;
+  background-color: #202834;
 }
 
 .img-contenido {
