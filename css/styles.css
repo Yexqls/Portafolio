@@ -104,6 +104,7 @@ body {
 }
 .descripcion {
   margin-bottom: 10px;
+  text-align: justify;
 }
 
 /* Personalización del scrollbar */
@@ -130,7 +131,7 @@ body {
   background-color: #5a2a9e;
 }
 
-.botones-iconos {
+.botones-alineacion {
   display: block;
   align-items: center;
   text-align: center;
@@ -298,14 +299,6 @@ body {
   display: flex;
 }
 
-.Redes {
-  text-align: center;
-  align-items: center;
-  padding: auto;
-  margin: auto;
-  font-size: 25px;
-}
-
 .text-pro {
   font-size: 28px;
 }
@@ -337,12 +330,7 @@ body {
     padding: 15px;
   }
 
-  .botones-iconos {
-    font-size: 15px;
-    margin: 10px;
-  }
-
-  .Redes {
+  .botones-alineacion {
     font-size: 15px;
     margin: 10px;
   }
