@@ -28,10 +28,13 @@ body {
   transition: box-shadow 0.3s ease, transform 0.3s ease; /* Agregamos box-shadow aquí */
 }
 
-.offset:hover, .offset:focus {
+.offset:hover,
+.offset:focus {
   color: white;
   box-shadow: 0 0 0 0 var(--hover), inset 6em 3.5em 0 0 var(--hover);
-  transform: scale(1.05); /* También puedes usar transform para dar un efecto adicional */
+  transform: scale(
+    1.05
+  ); /* También puedes usar transform para dar un efecto adicional */
 }
 
 /* Encabezado */
@@ -261,11 +264,19 @@ body {
 }
 
 .tecnologias {
-  border-radius: 30px;
+  --hover: #552277;
+  border-radius: 5px;
   margin-right: 5px;
   margin-bottom: 5px;
   color: white;
   background-color: #202834;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.tecnologias:hover {
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  -webkit-transform: translateY(-0.25em);
+  transform: translateY(-0.25em);
 }
 
 .img-contenido {
@@ -285,11 +296,10 @@ body {
   font-size: 25px;
 }
 
-
-.link{
+.link {
   color: #7c3aed;
 }
-.link:hover{
+.link:hover {
   color: #0a58cd;
 }
 
