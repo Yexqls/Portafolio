@@ -381,8 +381,8 @@ body {
 
 @font-face {
   font-family: "Sport_World";
-  src: url("fonts/Sports_World-Regular.ttf") format("truetype"),
-    url("fonts/.otf") format("opentype");
+  src: url("../fonts/Sports_World-Regular.ttf") format("truetype"),
+    url("../fonts/.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
 }
