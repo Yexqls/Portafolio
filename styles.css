@@ -77,8 +77,8 @@ body {
 /* Texto */
 .text {
   flex: 1;
-  color: #4b5563;
-  font-size: 1.5rem;
+  color: #212519;
+  font-size: 24px;
   line-height: 1.6;
   padding: 30px;
 }
@@ -95,6 +95,7 @@ body {
   align-items: center;
   font-weight: bold;
   margin-bottom: 10px;
+  color: #5a2a9e;
 }
 .subtitulo {
   font-weight: normal;
@@ -241,6 +242,13 @@ body {
   box-shadow: 0 0 15px #aaa, 0 0 45px #aaa, 0 0 75px #aaa, 0 0 115px #aaa;
 }
 
+.fa-bootstrap-ico:hover {
+  background-color: #7011ef;
+  color: white;
+  box-shadow: 0 0 15px #7011ef, 0 0 45px #7011ef, 0 0 75px #7011ef,
+    0 0 115px #7011ef;
+}
+
 .card {
   border: 4px solid #5a2a9e;
   flex: 50%;
@@ -274,7 +282,7 @@ body {
 }
 
 .tecnologias:hover {
-  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  box-shadow: 0 0.6em 0.5em -0.4em var(--hover);
   -webkit-transform: translateY(-0.25em);
   transform: translateY(-0.25em);
 }
@@ -296,12 +304,11 @@ body {
   font-size: 25px;
 }
 
-.link {
-  color: #7c3aed;
+
+.text-pro{
+  font-size: 28px;
 }
-.link:hover {
-  color: #0a58cd;
-}
+
 
 /* RESPONSIVIDAD */
 @media screen and (max-width: 768px) {
@@ -317,8 +324,9 @@ body {
 
   .profile-img {
     margin-bottom: 15px;
-    width: auto;
-    height: auto;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
   }
 
   .title {
@@ -339,6 +347,10 @@ body {
     margin: 10px;
   }
 
+  .text{
+    font-size: 12px;
+  }
+
   .card {
     margin: 10px;
   }
@@ -346,16 +358,36 @@ body {
   .cards {
     flex-direction: column;
   }
+
+  .subtitulo{
+    font-size: 13.5px;
+  }
+
+  .tec {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    text-align: justify;
+  }
+
+  .descripcion {
+    font-size: 12px;
+    text-align: justify;
+  }
+
+  .text-pro{
+    font-size: 15px;
+  }
 }
 
 @font-face {
-  font-family: "American Captain";
-  src: url("fonts/American Captain.ttf") format("truetype"),
-    url("fonts/American Captain.otf") format("opentype");
+  font-family: "Sport_World";
+  src: url("fonts/Sports_World-Regular.ttf") format("truetype"),
+    url("fonts/.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
 }
 
 body {
-  font-family: "American Captain", sans-serif;
+  font-family: "Sport_World", sans-serif;
 }
