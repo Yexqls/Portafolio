@@ -283,6 +283,7 @@ body {
 }
 
 .tecnologias:hover {
+  /* Efecto raise */
   box-shadow: 0 0.6em 0.5em -0.4em var(--hover);
   -webkit-transform: translateY(-0.25em);
   transform: translateY(-0.25em);
