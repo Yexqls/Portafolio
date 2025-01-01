@@ -1,12 +1,103 @@
 /* Estilo general */
 body {
-  font-family: "Arial", sans-serif;
-  background-color: #ffffff;
-  padding: 20px;
+  font-family: 'Sharp Sans Extrabold', sans-serif;
   margin: 0;
-  /* Asegúrate de que el margen del body no cause desplazamiento */
-  box-sizing: border-box;
+  padding: 0;
+  background-color: #f5f5f5;
 }
+
+/* Sección principal */
+.main-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+
+.main-title {
+  text-align: center;
+  font-size: 60px;
+  padding: 10px;
+  font-family: 'Sharp Sans Extrabold', sans-serif;
+  color: #1f2937;
+  z-index: 1;
+}
+
+/* Imagen de perfil */
+.profile-picture {
+  position: absolute; /* Para sacar la imagen del flujo normal */
+  top: 50%; /* Centrar verticalmente */
+  left: -120px; /* Mover la imagen fuera del contenedor hacia la izquierda */
+  transform: translateY(-50%); /* Ajustar posición vertical */
+  border-radius: 15px;
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border: 4px solid #7c3aed;
+}
+
+/* Contenedor content-wrapper */
+.content-wrapper {
+  position: relative; /* Establecer un contexto de posicionamiento para la imagen */
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  max-width: 1000px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  z-index: 1;
+}
+
+
+/* Texto */
+.description-text {
+  color: #1f2937;
+  font-size: 19px;
+  line-height: 1.8;
+  padding-left: 130px;
+  padding-right: 50px;
+  text-align: justify;
+}
+
+.text-highlight {
+  color: #7c3aed;
+  font-weight: bold;
+}
+
+/* Títulos */
+.section-title {
+  font-size: 2.5rem;
+  font-family: 'Sharp Sans Extrabold', sans-serif;
+  color: #1f2937;
+  margin-bottom: 20px;
+  border-bottom: 4px solid #7c3aed;
+  display: inline-block;
+}
+
+
+
+
+.section-one {
+  background: linear-gradient(to bottom, #e6e0f8, #f5f3ff);
+    padding: 20px; /* Espaciado interno */
+    padding-bottom: 90px;
+}
+
+.section-two {
+  background-color: #e6d6ff; /* Color de fondo para la segunda sección */
+  padding: 20px; /* Espaciado interno */
+}
+
+.section-three {
+  background-color: #000c20; /* Color de fondo para la segunda sección */
+  padding: 20px; /* Espaciado interno */
+}
+
 
 .see-boton {
   display: flex;
@@ -40,7 +131,8 @@ body {
 /* Encabezado */
 .title {
   font-size: 2.5rem;
-  font-weight: bold;
+  font-family: "Sharp Sans Extrabold", sans-serif; /* Aplica la fuente personalizada */
+
   color: #1f2937;
   margin-bottom: 20px;
   border-bottom: 4px solid #7c3aed;
@@ -49,13 +141,13 @@ body {
 
 /* Contenedor principal */
 .container {
-  border: 4px solid #7c3aed;
   background-color: #ffffff;
   padding: 15px;
   max-width: 1750px;
   margin: 0 auto;
   box-shadow: 0 4px 6px rgba(247, 241, 241, 0.1);
   box-sizing: border-box;
+  border-radius: 40px;
 }
 
 /* Flexbox para imagen y texto */
@@ -261,6 +353,7 @@ body {
   display: flex;
   flex-direction: column;
   transition: transform 0.3s ease;
+  border-radius: 10px
   /* Transición suave */
 }
 
@@ -282,6 +375,7 @@ body {
   color: white;
   background-color: #202834;
   transition: box-shadow 0.3s ease, transform 0.3s ease;
+  border-radius: 32px;
 }
 
 .tecnologias:hover {
@@ -289,6 +383,31 @@ body {
   box-shadow: 0 0.6em 0.5em -0.4em var(--hover);
   -webkit-transform: translateY(-0.25em);
   transform: translateY(-0.25em);
+}
+
+.up {
+  --hover: white; /* Color de relleno al hacer hover */
+  border-radius: 5px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  color: white;
+  background-color: black;
+  transition: box-shadow 0.5s ease, color 0.5s ease;
+  position: relative;
+  overflow: hidden; /* Asegura que el efecto fill-up no salga del botón */
+  font-family: "Sharp Sans Extrabold", sans-serif; /* Aplica la fuente personalizada */
+  font-size: 16px;
+  border-radius: 32px;
+  padding: 12px 26px;
+
+}
+
+.up:hover,
+.up:focus {
+  /* Efecto fill-up */
+  box-shadow: inset 0 -3.25em 0 0 var(--hover); /* Rellena desde abajo */
+  color: black; /* Cambia el color del texto si es necesario */
+  transition: box-shadow 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
 .img-contenido {
@@ -306,10 +425,6 @@ body {
 
 /* RESPONSIVIDAD */
 @media screen and (max-width: 768px) {
-  body {
-    padding: 10px;
-  }
-
   .content {
     flex-direction: column;
     /* Cambia a columna */
@@ -367,12 +482,37 @@ body {
   .text-pro {
     font-size: 15px;
   }
+
+  .profile-picture {
+    position: relative; /* Vuelve la imagen al flujo normal */
+    top: 0;
+    left: 0;
+    transform: none;
+    width: 200px; /* Ajusta el tamaño de la imagen */
+    height: 200px;
+    margin-bottom: 20px; /* Añade espacio debajo de la imagen */
+  }
+
+  .content-wrapper {
+    text-align: justify;
+    flex-direction: column; /* Apila el contenido de arriba a abajo */
+    align-items: center; /* Centra el contenido */
+    padding: 20px; /* Menos padding en pantallas pequeñas */
+    gap: 10px; /* Menor espacio entre los elementos */
+  }
+
+  .description-text {
+    font-size: 12px; /* Ajusta el tamaño de la fuente para pantallas pequeñas */
+    padding-left: 0; /* Elimina el padding izquierdo */
+    padding-right: 0; /* Elimina el padding derecho */
+    text-align: justify; /* Centra el texto */
+  }
 }
+
 
 @font-face {
   font-family: "Sport_World";
-  src: url("../fonts/Sports_World-Regular.ttf") format("truetype"),
-    url("../fonts/.otf") format("opentype");
+  src: url    url("../fonts/Sharp Sans.otf") format("opentype"); 
   font-weight: normal;
   font-style: normal;
 }
@@ -380,3 +520,11 @@ body {
 body {
   font-family: "Sport_World", sans-serif;
 }
+
+@font-face {
+  font-family: "Sharp Sans Extrabold";
+  src: url("../fonts/Sharp Sans Extrabold.otf") format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+
