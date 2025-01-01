@@ -19,9 +19,9 @@ body {
 .img-fondo{
   background-image: url("https://thumbs.dreamstime.com/b/c%C3%B3digo-de-computadora-abstracto-en-blanco-negro-programaci%C3%B3n-sobre-fondo-concepto-ciberespacio-180554139.jpg"); /* Ruta de tu imagen */
   background-size: cover; /* Escala para cubrir todo */
-  background-position: center; /* Centrar la imagen */
-  background-repeat: no-repeat; /* Evitar repeticiones */
-  padding: 80px 50px; /* Espaciado interno */
+  background-position: center; 
+  background-repeat: no-repeat; 
+  padding: 80px 50px; 
   border-radius: 30px;
 }
 
@@ -39,8 +39,8 @@ body {
 /* Imagen de perfil */
 .profile-picture {
   position: absolute; /* Para sacar la imagen del flujo normal */
-  top: 50%; /* Centrar verticalmente */
-  left: -160px; /* Mover la imagen fuera del contenedor hacia la izquierda */
+  top: 50%; 
+  left: -160px;
   transform: translateY(-50%); /* Ajustar posición vertical */
   border-radius: 15px;
   width: 290px;
@@ -59,7 +59,7 @@ body {
   display: flex;
   gap: 20px;
   align-items: center;
-  z-index: 2; /* Asegurar que quede encima del fondo */
+  z-index: 2; 
 }
 
 /* Texto */
@@ -89,18 +89,18 @@ body {
 
 .section-one {
   background: linear-gradient(to bottom, #e6e0f8, #f5f3ff);
-  padding: 20px; /* Espaciado interno */
+  padding: 20px; 
   padding-bottom: 90px;
 }
 
 .section-two {
-  background-color: #e6d6ff; /* Color de fondo para la segunda sección */
-  padding: 20px; /* Espaciado interno */
+  background-color: #e6d6ff; 
+  padding: 20px; 
 }
 
 .section-three {
-  background-color: #000c20; /* Color de fondo para la segunda sección */
-  padding: 20px; /* Espaciado interno */
+  background-color: #000c20; 
+  padding: 20px; 
 }
 
 .see-boton {
@@ -147,7 +147,7 @@ body {
 .container {
   background-color: #ffffff;
   padding: 30px;
-  max-width: 1700px;
+  max-width: 1600px;
   margin: 0 auto;
   box-shadow: 0 4px 6px rgba(247, 241, 241, 0.1);
   box-sizing: border-box;
@@ -195,7 +195,7 @@ body {
   color: #5a2a9e;
 }
 .subtitulo {
-  font-weight: normal;
+  font-family: "Sharp Sans Extrabold", sans-serif;
   margin-bottom: 10px;
 }
 .descripcion {
@@ -238,8 +238,9 @@ body {
 /*iconos estilo*/
 .icono {
   text-align: center;
-  box-shadow: 0px 4px 15px #5a2a9e; border-radius: 32px;  margin: 20px;
-  padding: 15px;
+  box-shadow: 0px 4px 15px #5a2a9e; border-radius: 32px;  
+  margin: 20px;
+  padding: 12px;
   transition: 0.3s ease;
   border: none;
   font-family: "Sharp Sans Extrabold", sans-serif; /* Aplica la fuente personalizada */
@@ -379,7 +380,7 @@ body {
   color: white;
   background-color: #202835;
   transition: box-shadow 0.3s ease, transform 0.3s ease;
-  font-family: "Sharp Sans Extrabold", sans-serif; /* Aplica la fuente personalizada */
+  font-family: "Sharp Sans Extrabold", sans-serif; 
   font-size: 16px;
   border-radius: 32px;
   padding: 12px 26px;}
@@ -392,7 +393,7 @@ body {
 }
 
 .up {
-  --hover: white; /* Color de relleno al hacer hover */
+  --hover: white; 
   border-radius: 5px;
   margin-right: 5px;
   margin-bottom: 5px;
@@ -400,8 +401,8 @@ body {
   background-color: black;
   transition: box-shadow 0.5s ease, color 0.5s ease;
   position: relative;
-  overflow: hidden; /* Asegura que el efecto fill-up no salga del botón */
-  font-family: "Sharp Sans Extrabold", sans-serif; /* Aplica la fuente personalizada */
+  overflow: auto; /* Asegura que el efecto fill-up no salga del botón */
+  font-family: "Sharp Sans Extrabold", sans-serif; 
   font-size: 16px;
   border-radius: 32px;
   padding: 12px 26px;
@@ -411,7 +412,7 @@ body {
 .up:focus {
   /* Efecto fill-up */
   box-shadow: inset 0 -3.25em 0 0 var(--hover); /* Rellena desde abajo */
-  color: black; /* Cambia el color del texto si es necesario */
+  color: black; 
   transition: box-shadow 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
@@ -433,28 +434,28 @@ body {
 
 @media (max-width: 1380px) {
   .profile-picture {
-    position: relative; /* Vuelve la imagen al flujo normal */
+    position: relative; 
     top: 0;
     left: 0;
     transform: none;
-    width: 200px; /* Ajusta el tamaño de la imagen */
+    width: 200px; 
     height: 200px;
-    margin-bottom: 20px; /* Añade espacio debajo de la imagen */
+    margin-bottom: 20px; 
   }
 
   .content-wrapper {
-    flex-direction: column; /* Apila el contenido de arriba a abajo */
-    align-items: center; /* Centra el contenido */
-    padding: 20px; /* Menos padding en pantallas pequeñas */
+    flex-direction: column; 
+    align-items: center;
+    padding: 20px; 
     gap: 10px; /* Menor espacio entre los elementos */
   }
 
 
   .description-text {
-    font-size: 24px; /* Ajusta el tamaño de la fuente para pantallas pequeñas */
-    padding-left: 30px; /* Elimina el padding izquierdo */
-    padding-right: 30px; /* Elimina el padding derecho */
-    text-align: justify; /* Centra el texto */
+    font-size: 24px; 
+    padding-left: 30px; 
+    padding-right: 30px; 
+    text-align: justify; 
   }
 }
 /* RESPONSIVIDAD */
@@ -504,7 +505,7 @@ body {
   .tec {
     display: flex;
     flex-direction: column;
-    font-size: 14px;
+    font-size: 15px;
     text-align: justify;
   }
 
@@ -518,33 +519,32 @@ body {
   }
 
   .profile-picture {
-    position: relative; /* Vuelve la imagen al flujo normal */
+    position: relative; 
     top: 0;
     left: 0;
     transform: none;
-    width: 200px; /* Ajusta el tamaño de la imagen */
+    width: 200px; 
     height: 200px;
-    margin-bottom: 20px; /* Añade espacio debajo de la imagen */
+    margin-bottom: 20px; 
   }
 
   .content-wrapper {
     text-align: justify;
-    flex-direction: column; /* Apila el contenido de arriba a abajo */
-    align-items: center; /* Centra el contenido */
-    padding: 20px; /* Menos padding en pantallas pequeñas */
+    flex-direction: column; 
+    align-items: center; 
+    padding: 20px; 
     gap: 10px; /* Menor espacio entre los elementos */
   }
 
   .description-text {
-    font-size: 12px; /* Ajusta el tamaño de la fuente para pantallas pequeñas */
-    padding-left: 0; /* Elimina el padding izquierdo */
-    padding-right: 0; /* Elimina el padding derecho */
-    text-align: justify; /* Centra el texto */
+    font-size: 12px; 
+    padding-left: 0; 
+    padding-right: 0; 
+    text-align: justify;
   }
 
   .img-fondo{
-    padding: 50px 20px; /* Espaciado interno */
-
+    padding: 50px 20px;
   }
 }
 
