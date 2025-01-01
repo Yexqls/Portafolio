@@ -17,27 +17,27 @@
 <body>
   <div class="main-section section-one">
     <h1 class="main-title">&lt;/&gt;Yucli Emmanuel</h1>
-    <div class="content-wrapper">
-      <!--       <img src="/img/yo.jpg" alt="Foto de perfil" class="profile-picture-back" style="    width: 500px;
-    height: 500px;"/> -->
-
-      <img src="/img/yo.jpg" alt="Foto de perfil" class="profile-picture" />
-      <div class="description-text">
-        <h1 class="section-title">Algo de mí...</h1>
-        <p>
-          Soy un <span class="text-highlight">ingeniero en Sistemas Computacionales</span> con un profundo entusiasmo
-          por
-          contribuir al desarrollo de <span class="text-highlight">soluciones web innovadoras</span> que satisfagan
-          plenamente las expectativas de los usuarios.
-        </p>
-        <p>
-          Me interesa participar en la mejora de la <span class="text-highlight">reputación tecnológica de la
-            empresa</span>
-          mediante el desarrollo de aplicaciones web,
-          aportando valor a través de mis <span class="text-highlight">conocimientos, habilidades y aptitudes</span>.
-        </p>
+    <div class="img-fondo">
+      <div class="content-wrapper">
+        <img src="/img/yo.jpg" alt="Foto de perfil" class="profile-picture" />
+        <div class="description-text">
+          <h1 class="section-title">Algo de mí...</h1>
+          <p>
+            Soy un <span class="text-highlight">ingeniero en Sistemas Computacionales</span> con un profundo entusiasmo
+            por
+            contribuir al desarrollo de <span class="text-highlight">soluciones web innovadoras</span> que satisfagan
+            plenamente las expectativas de los usuarios.
+          </p>
+          <p>
+            Me interesa participar en la mejora de la <span class="text-highlight">reputación tecnológica de la
+              empresa</span>
+            mediante el desarrollo de aplicaciones web,
+            aportando valor a través de mis <span class="text-highlight">conocimientos, habilidades y aptitudes</span>.
+          </p>
+        </div>
       </div>
     </div>
+    
 
     <!-- Experiencia -->
     <div class="container mt-4">
@@ -79,29 +79,29 @@
     <div class="container mt-4">
       <h1 class="title">Skills</h1>
       <div class="botones-alineacion">
-        <button style="border: 4px solid #5a2a9e;" class="fa-php-ico icono"> <i class="fa-brands fa-php"></i>
+        <button class="fa-php-ico icono"> <i class="fa-brands fa-php"></i>
           PHP
         </button>
-        <button style="border: 4px solid #5a2a9e;" class="fa-laravel-ico icono"><i class="fa-brands fa-laravel"></i>
+        <button  class="fa-laravel-ico icono"><i class="fa-brands fa-laravel"></i>
           laravel</button>
-        <button style="border: 4px solid #5a2a9e" class="fa-python-ico icono"> <i class="fa-brands fa-python"></i>
+        <button  class="fa-python-ico icono"> <i class="fa-brands fa-python"></i>
           Python
         </button>
-        <button style="border: 4px solid #5a2a9e" class="fa-github-ico icono"><i class="fa-brands fa-github"></i>
+        <button  class="fa-github-ico icono"><i class="fa-brands fa-github"></i>
           GitHub
         </button>
       </div>
       <div class="botones-alineacion">
-        <button style="border: 4px solid #5a2a9e" class="fa-html5-ico icono"> <i class="fa-brands fa-html5"></i>
+        <button  class="fa-html5-ico icono"> <i class="fa-brands fa-html5"></i>
           HTML
         </button>
-        <button style="border: 4px solid #5a2a9e" class="fa-css3-ico icono"> <i class="fa-brands fa-css3"></i>
+        <button  class="fa-css3-ico icono"> <i class="fa-brands fa-css3"></i>
           CSS
         </button>
-        <button style="border: 4px solid #5a2a9e" class="fa-js-ico icono"> <i class="fa-brands fa-js"></i>
+        <button  class="fa-js-ico icono"> <i class="fa-brands fa-js"></i>
           JS
         </button>
-        <button style="border: 4px solid #5a2a9e" class="fa-bootstrap-ico icono"> <i class="fa-brands fa-bootstrap"></i>
+        <button  class="fa-bootstrap-ico icono"> <i class="fa-brands fa-bootstrap"></i>
           Bosstrap
         </button>
       </div>
@@ -113,12 +113,13 @@
       <h1 class="title">Proyectos</h1>
       <div class="cards">
         <div class="card">
-          <div class="contenido text-pro highlight">
-            Plataforma OC
-          </div>
+
           <img src="img/oc_biofisica.png" alt="Pagina OC" class="img-contenido"
             style="border-radius: 20px; margin-top: 15px; margin-bottom: 10px;">
-          <p class="descripcion">Plataforma diseñada para la gestión, emisión de certificados de mezcal y administración
+            <div class="contenido text-pro highlight">
+              Plataforma OC
+            </div>
+          <p class="descripcion" style="  font-size: 19px;">Plataforma diseñada para la gestión, emisión de certificados de mezcal y administración
             de datos de clientes, tanto internos como externos de la empresa. Esta plataforma ofrece una experiencia
             eficiente, segura y personalizada, optimizando procesos y facilitando el acceso a la información relevante
             para cada usuario.</p>
@@ -132,11 +133,9 @@
             <button class="tecnologias"><i class="fa-brands fa-css3"></i> CSS</button>
             <button class="tecnologias"><i class="fa-brands fa-js"></i> JS</button>
           </div>
-          <div class="see-boton">
-            <a href="http://oc.biofisica.com.mx/login" target="_blank" rel="noopener noreferrer">
-              <button class="offset"><i class="fa-solid fa-link"></i>
-                Visitar sitio</button>
-            </a>
+          <div style="text-align: center;">
+            <a href="http://oc.biofisica.com.mx/login" target="_blank" rel="noopener noreferrer"><button class="up">Visitar
+              sitio</button></a>
           </div>
         </div>
         <div class="card">
@@ -160,23 +159,23 @@
   </div>
   <!-- Redes -->
   <div class="section-three">
-    <div class="container mt-4">
-      <h1 class="title">Redes</h1>
+    <div class="container mt-4" style="background-color: #000c20; box-shadow: none;">
+      <h1 class="title" style="color: white;">Redes</h1>
       <div class="botones-alineacion">
         <a href="https://www.linkedin.com/in/yucli-emmanuel-baza-ortu%C3%B1o-b813912a1/" target="_blank">
-          <button style="border: 4px solid #5a2a9e;" class=" fa-linkedin-ico icono"><i
+          <button style="border: 4px solid #7c3aed;" class=" fa-linkedin-ico icono"><i
               class="fa-brands fa-linkedin"></i>
             Linkedin</button></a>
         <a href="https://github.com/Yexqls" target="_blank">
-          <button style="border: 4px solid #5a2a9e;" class="fa-github-ico icono"><i class="fa-brands fa-github"></i>
+          <button style="border: 4px solid #7c3aed;" class="fa-github-ico icono"><i class="fa-brands fa-github"></i>
             GitHub </button></a>
         <a href="https://wa.me/524351218024?text=Hola%2C%20estoy%20interesado%20en%20tus%20servicios%21"
           target="_blank">
-          <button style="border: 4px solid #5a2a9e;" class="fa-square-whatsapp-ico icono"><i
+          <button style="border: 4px solid #7c3aed;" class="fa-square-whatsapp-ico icono"><i
               class="fa-brands fa-square-whatsapp"></i>
             WhatsApp</button></a>
         <a href="mailto:yucli_baza@outlook.com" style="text-decoration: none;">
-          <button style="border: 4px solid #5a2a9e; background-color: #006dbe; color: white;"
+          <button style="border: 4px solid #7c3aed; background-color: #006dbe; color: white;"
             class="fa-envelope-ico icono">
             <i class="fa-solid fa-envelope"></i>
             yucli_baza@outlook.com</button>
@@ -184,7 +183,7 @@
       </div>
       <div class="botones-alineacion">
         <a href="docs/CV_yucli.pdf" download="Curriculum.pdf">
-          <button style=" border: 4px solid #5a2a9e;" class="fa-file-ico icono"><i class="fa-solid fa-file"></i>
+          <button style=" border: 4px solid #7c3aed;" class="fa-file-ico icono"><i class="fa-solid fa-file"></i>
             Descargar Curriculum</button>
         </a>
       </div>
