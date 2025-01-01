@@ -201,8 +201,15 @@ body {
 .descripcion {
   margin-bottom: 10px;
   text-align: justify;
-  font-size: 19px;
+  font-size: 24px;
 }
+
+.descripcion-pro {
+  margin-bottom: 10px;
+  text-align: justify;
+  font-size: 17px;
+}
+
 
 /* Personalización del scrollbar */
 ::-webkit-scrollbar {
@@ -379,12 +386,12 @@ flex-grow: 1;
   margin-right: 5px;
   margin-bottom: 5px;
   color: white;
-  background-color: #202835;
+  background-color: #202834;
   transition: box-shadow 0.3s ease, transform 0.3s ease;
   font-family: "Sharp Sans Extrabold", sans-serif; 
   font-size: 16px;
   border-radius:15px;
-  padding: 12px 26px;
+  padding: 9px 20px;
 }
 
 .tecnologias:hover {
