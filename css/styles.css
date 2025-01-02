@@ -68,8 +68,8 @@ body {
   font-size: 19px;
   line-height: 1.8;
   padding-left: 130px;
-  padding-right: 50px;
-  text-align: justify;
+  padding-right: 30px;
+  text-align: left;
 }
 
 .text-highlight {
@@ -154,7 +154,7 @@ body {
   font-size: 24px;
   line-height: 1.6;
   padding: 30px;
-  text-align: justify;
+  text-align: left;
 }
 
 /* Resaltado */
@@ -177,14 +177,14 @@ body {
 }
 .descripcion {
   margin-bottom: 10px;
-  text-align: justify;
+  text-align: left;
   font-size: 24px;
 }
 
 .descripcion-pro {
   margin-bottom: 10px;
-  text-align: justify;
-  font-size: 17px;
+  text-align: left;
+  font-size: 19px;
 }
 
 
@@ -442,7 +442,6 @@ flex-grow: 1;
     font-size: 24px; 
     padding-left: 30px; 
     padding-right: 30px; 
-    text-align: justify; 
   }
 }
 /* RESPONSIVIDAD */
@@ -450,7 +449,6 @@ flex-grow: 1;
   .content {
     flex-direction: column;
     /* Cambia a columna */
-    text-align: justify;
   }
 
   .profile-img {
@@ -493,12 +491,10 @@ flex-grow: 1;
     display: flex;
     flex-direction: column;
     font-size: 15px;
-    text-align: justify;
   }
 
   .descripcion {
     font-size: 12px;
-    text-align: justify;
   }
 
   .text-pro {
@@ -516,7 +512,6 @@ flex-grow: 1;
   }
 
   .content-wrapper {
-    text-align: justify;
     flex-direction: column; 
     align-items: center; 
     padding: 20px; 
@@ -527,7 +522,7 @@ flex-grow: 1;
     font-size: 12px; 
     padding-left: 0; 
     padding-right: 0; 
-    text-align: justify;
+    text-align: left;
   }
 
   .img-fondo{
