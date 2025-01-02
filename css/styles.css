@@ -460,6 +460,9 @@ body {
     /* Cambia a columna */
   }
 
+  .main-title{
+    font-size: 40px;
+  }
   .profile-img {
     margin-bottom: 15px;
     width: 200px;
