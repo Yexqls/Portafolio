@@ -59,7 +59,7 @@ body {
 /* Texto */
 .description-text {
   color: #1f2937;
-  font-size: 19px;
+  font-size: 20px;
   line-height: 1.8;
   padding-left: 30px;
   padding-right: 30px;
@@ -173,13 +173,13 @@ body {
 .descripcion {
   margin-bottom: 10px;
   text-align: left;
-  font-size: 24px;
+  font-size: 22px;
 }
 
 .descripcion-pro {
   margin-bottom: 10px;
   text-align: left;
-  font-size: 19px;
+  font-size: 20px;
 }
 
 /* Personalización del scrollbar */
