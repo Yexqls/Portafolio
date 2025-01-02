@@ -30,7 +30,7 @@ body {
   text-align: center;
   font-size: 60px;
   padding: 10px;
-  font-family: "Bubble Garden Bold", sans-serif;
+  font-family: "YaroSt-Black", sans-serif;
   color: #1f2937;
   z-index: 1;
   
@@ -413,6 +413,8 @@ flex-grow: 1;
 
 .cards {
   margin-top: 15px;
+  margin-bottom: 15px;
+
   display: flex;
 }
 
@@ -480,7 +482,7 @@ flex-grow: 1;
   }
 
   .card {
-    margin: 10px;
+    margin: 15px;
   }
 
   .cards {
@@ -564,7 +566,7 @@ body {
 
 
 @font-face {
-  font-family: "Bubble Garden Bold";
+  font-family: "YaroSt-Black";
   src: url("../fonts/YaroSt-Black.ttf") format("opentype");
   font-weight: bold;
   font-style: normal;
