@@ -38,10 +38,7 @@ body {
 
 /* Imagen de perfil */
 .profile-picture {
-  position: absolute; /* Para sacar la imagen del flujo normal */
-  top: 50%; 
-  left: -160px;
-  transform: translateY(-50%); /* Ajustar posición vertical */
+
   border-radius: 15px;
   width: 240px;
   height: 240px;
@@ -55,7 +52,7 @@ body {
   border-radius: 15px;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
   padding: 30px;
-  max-width: 1280px;
+  max-width: 1500px;
   display: flex;
   gap: 20px;
   align-items: center;
@@ -67,7 +64,7 @@ body {
   color: #1f2937;
   font-size: 19px;
   line-height: 1.8;
-  padding-left: 130px;
+  padding-left: 30px;
   padding-right: 30px;
   text-align: left;
 }
@@ -88,14 +85,15 @@ body {
 }
 
 .section-one {
-  background: linear-gradient(to bottom, #e6e0f8, #f5f3ff);
+  background: linear-gradient(to bottom, #f5f3ff , #e6e0f8, #E7E1F8);
   padding: 20px; 
-  padding-bottom: 90px;
 }
 
 .section-two {
-  background-color: #e6d6ff; 
-  padding: 20px; 
+  background: linear-gradient(to top,#e6d6ff  ,  #E7E1F8);
+  padding: 20px;
+  padding-bottom: 120px;
+  padding-top: 2rem;
 }
 
 .section-three {
@@ -222,7 +220,9 @@ body {
 
 /*iconos estilo*/
 .icono {
-  text-align: center;
+  gap: 5px; 
+  display: inline-flex; 
+  align-items: center; 
   box-shadow: 0px 4px 15px #5a2a9e; border-radius: 32px;  
   margin: 20px;
   padding: 12px;
@@ -360,6 +360,9 @@ flex-grow: 1;
 
 .tecnologias {
   --hover: #552277;
+  gap: 5px; 
+  display: inline-flex; 
+  align-items: center; 
   margin-right: 5px;
   margin-bottom: 5px;
   color: white;
@@ -367,9 +370,10 @@ flex-grow: 1;
   transition: box-shadow 0.3s ease, transform 0.3s ease;
   font-family: "Sharp Sans Extrabold", sans-serif; 
   font-size: 16px;
-  border-radius:15px;
+  border-radius: 15px;
   padding: 9px 20px;
 }
+
 
 .tecnologias:hover {
   /* Efecto raise */
