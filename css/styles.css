@@ -13,15 +13,14 @@ body {
   justify-content: center;
   position: relative;
   overflow: hidden;
-
 }
 
-.img-fondo{
+.img-fondo {
   background-image: url("https://thumbs.dreamstime.com/b/c%C3%B3digo-de-computadora-abstracto-en-blanco-negro-programaci%C3%B3n-sobre-fondo-concepto-ciberespacio-180554139.jpg"); /* Ruta de tu imagen */
   background-size: cover; /* Escala para cubrir todo */
-  background-position: center; 
-  background-repeat: no-repeat; 
-  padding: 80px 50px; 
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 80px 50px;
   border-radius: 30px;
 }
 
@@ -33,12 +32,10 @@ body {
   font-family: "YaroSt-Black", sans-serif;
   color: #1f2937;
   z-index: 1;
-  
 }
 
 /* Imagen de perfil */
 .profile-picture {
-
   border-radius: 15px;
   width: 240px;
   height: 240px;
@@ -56,7 +53,7 @@ body {
   display: flex;
   gap: 20px;
   align-items: center;
-  z-index: 2; 
+  z-index: 2;
 }
 
 /* Texto */
@@ -85,20 +82,20 @@ body {
 }
 
 .section-one {
-  background: linear-gradient(to bottom, #f5f3ff , #e6e0f8, #E7E1F8);
-  padding: 20px; 
+  background: linear-gradient(to bottom, #f5f3ff, #e6e0f8, #e7e1f8);
+  padding: 20px;
 }
 
 .section-two {
-  background: linear-gradient(to top,#e6d6ff  ,  #E7E1F8);
+  background: linear-gradient(to top, #e6d6ff, #e7e1f8);
   padding: 20px;
   padding-bottom: 120px;
   padding-top: 2rem;
 }
 
 .section-three {
-  background-color: #000c20; 
-  padding: 20px; 
+  background-color: #000c20;
+  padding: 20px;
 }
 
 .see-boton {
@@ -185,7 +182,6 @@ body {
   font-size: 19px;
 }
 
-
 /* Personalización del scrollbar */
 ::-webkit-scrollbar {
   width: 15px;
@@ -220,17 +216,17 @@ body {
 
 /*iconos estilo*/
 .icono {
-  gap: 5px; 
-  display: inline-flex; 
-  align-items: center; 
-  box-shadow: 0px 4px 15px #5a2a9e; border-radius: 32px;  
+  gap: 5px;
+  display: inline-flex;
+  align-items: center;
+  box-shadow: 0px 4px 15px #5a2a9e;
+  border-radius: 32px;
   margin: 20px;
   padding: 12px;
   transition: 0.3s ease;
   border: none;
   font-family: "Sharp Sans Extrabold", sans-serif; /* Aplica la fuente personalizada */
   font-size: 24px;
-
 }
 
 /*LENGUAJES BACKEND*/
@@ -346,34 +342,34 @@ body {
   transition: transform 0.3s ease;
   border-radius: 10px;
   /* Transición suave */
-  box-shadow: 0px 4px 15px #5a2a9e;}
+  box-shadow: 0px 4px 15px #5a2a9e;
+}
 
 .card:hover {
   transform: scale(1.04);
 }
 
 .card .contenido {
-flex-grow: 1;
+  flex-grow: 1;
 
   flex-shrink: 1;
 }
 
 .tecnologias {
   --hover: #552277;
-  gap: 5px; 
-  display: inline-flex; 
-  align-items: center; 
+  gap: 5px;
+  display: inline-flex;
+  align-items: center;
   margin-right: 5px;
   margin-bottom: 5px;
   color: white;
   background-color: #202834;
   transition: box-shadow 0.3s ease, transform 0.3s ease;
-  font-family: "Sharp Sans Extrabold", sans-serif; 
+  font-family: "Sharp Sans Extrabold", sans-serif;
   font-size: 16px;
   border-radius: 15px;
   padding: 9px 20px;
 }
-
 
 .tecnologias:hover {
   /* Efecto raise */
@@ -383,7 +379,7 @@ flex-grow: 1;
 }
 
 .up {
-  --hover: white; 
+  --hover: white;
   border-radius: 5px;
   margin-right: 5px;
   margin-bottom: 5px;
@@ -392,7 +388,7 @@ flex-grow: 1;
   transition: box-shadow 0.5s ease, color 0.5s ease;
   position: relative;
   overflow: auto; /* Asegura que el efecto fill-up no salga del botón */
-  font-family: "Sharp Sans Extrabold", sans-serif; 
+  font-family: "Sharp Sans Extrabold", sans-serif;
   font-size: 16px;
   border-radius: 32px;
   padding: 12px 26px;
@@ -402,7 +398,7 @@ flex-grow: 1;
 .up:focus {
   /* Efecto fill-up */
   box-shadow: inset 0 -3.25em 0 0 var(--hover); /* Rellena desde abajo */
-  color: black; 
+  color: black;
   transition: box-shadow 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
@@ -419,35 +415,32 @@ flex-grow: 1;
 }
 
 .text-pro {
-  font-family: "Sharp Sans Extrabold", sans-serif; 
+  font-family: "Sharp Sans Extrabold", sans-serif;
   font-size: 28px;
 }
 
-
-
 @media (max-width: 1380px) {
   .profile-picture {
-    position: relative; 
+    position: relative;
     top: 0;
     left: 0;
     transform: none;
-    width: 200px; 
+    width: 200px;
     height: 200px;
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
   }
 
   .content-wrapper {
-    flex-direction: column; 
+    flex-direction: column;
     align-items: center;
-    padding: 20px; 
+    padding: 20px;
     gap: 10px; /* Menor espacio entre los elementos */
   }
 
-
   .description-text {
-    font-size: 24px; 
-    padding-left: 30px; 
-    padding-right: 30px; 
+    font-size: 24px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
 /* RESPONSIVIDAD */
@@ -473,9 +466,12 @@ flex-grow: 1;
   }
 
   .botones-alineacion {
-    font-size: 15px;
+    font-size: 12px;
     margin: 10px;
-  }
+    display: flex;
+    flex-direction: column;
+/*     flex-wrap: wrap;
+ */  }
 
   .text {
     font-size: 12px;
@@ -497,6 +493,7 @@ flex-grow: 1;
     display: flex;
     flex-direction: column;
     font-size: 15px;
+    text-align: center;
   }
 
   .descripcion {
@@ -504,45 +501,44 @@ flex-grow: 1;
   }
 
   .text-pro {
-    font-size: 13.5px;
+    font-size: 14px;
   }
 
   .profile-picture {
-    position: relative; 
+    position: relative;
     top: 0;
     left: 0;
     transform: none;
-    width: 200px; 
+    width: 200px;
     height: 200px;
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
   }
 
   .content-wrapper {
-    flex-direction: column; 
-    align-items: center; 
-    padding: 20px; 
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
     gap: 10px; /* Menor espacio entre los elementos */
   }
 
   .description-text {
-    font-size: 12px; 
-    padding-left: 0; 
-    padding-right: 0; 
+    font-size: 12px;
+    padding-left: 0;
+    padding-right: 0;
     text-align: left;
   }
 
-  .img-fondo{
+  .img-fondo {
     padding: 50px 20px;
   }
 
-  .tecnologias{
+  .tecnologias {
     font-size: 12px;
-    padding: 8px 26px
+    padding: 8px 26px;
   }
 
-  .descripcion-pro{
+  .descripcion-pro {
     font-size: 12px;
-
   }
 }
 
@@ -563,7 +559,6 @@ body {
   font-weight: bold;
   font-style: normal;
 }
-
 
 @font-face {
   font-family: "YaroSt-Black";
