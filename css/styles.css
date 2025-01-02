@@ -419,6 +419,16 @@ body {
   font-size: 28px;
 }
 
+.dots {
+  display: inline-flex;
+  gap: 5px;
+}
+
+.dot {
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
 @media (max-width: 1380px) {
   .profile-picture {
     position: relative;

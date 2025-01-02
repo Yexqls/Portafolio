@@ -15,7 +15,11 @@
 
 <body>
   <div class="main-section section-one">
-    <h1 class="main-title">&lt;/&gt;Yucli Emmanuel</h1>
+    <h1 class="main-title">&lt;/&gt;Yucli Emmanuel<div class="dots">
+      <span class="dot">.</span>
+      <span class="dot">.</span>
+      <span class="dot">.</span>
+  </div></h1>
     <div class="img-fondo">
       <div class="content-wrapper">
         <img src="/img/yo.webp" alt="Foto de perfil" class="profile-picture" />
@@ -181,6 +185,16 @@
     </div>
   </div>
 </body>
-
-
 </html>
+
+<script>
+  const dots = document.querySelectorAll('.dot');
+  let current = 0;
+
+  setInterval(() => {
+      dots.forEach((dot, index) => {
+          dot.style.opacity = index === current ? '1' : '0';
+      });
+      current = (current + 1) % dots.length;
+  }, 300);
+</script>
