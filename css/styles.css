@@ -413,6 +413,7 @@ flex-grow: 1;
 }
 
 .text-pro {
+  font-family: "Sharp Sans Extrabold", sans-serif; 
   font-size: 28px;
 }
 
@@ -501,7 +502,7 @@ flex-grow: 1;
   }
 
   .text-pro {
-    font-size: 15px;
+    font-size: 13.5px;
   }
 
   .profile-picture {
@@ -536,6 +537,11 @@ flex-grow: 1;
   .tecnologias{
     font-size: 12px;
     padding: 8px 26px
+  }
+
+  .descripcion-pro{
+    font-size: 12px;
+
   }
 }
 
