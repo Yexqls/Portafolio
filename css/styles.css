@@ -318,7 +318,7 @@ body {
     0 0 115px #006dbe;
 }
 
-.fa-file-ico:hover {
+.fa-file-lines-ico:hover {
   background-color: #aaa;
   color: white;
   box-shadow: 0 0 15px #aaa, 0 0 45px #aaa, 0 0 75px #aaa, 0 0 115px #aaa;
@@ -547,7 +547,7 @@ body {
 
   .tecnologias {
     font-size: 12px;
-    padding: 8px 26px;
+    padding: 8px 20px;
   }
 
   .descripcion-pro {
