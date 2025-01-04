@@ -565,7 +565,7 @@ body {
   }
 
   .img-contenido{
-    width: 270px;
+    width: auto;
     height: 130px;
   }
 }
