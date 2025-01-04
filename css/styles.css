@@ -409,7 +409,7 @@ body {
   margin-top: 15px;
   margin-bottom: 10px;
   align-items: center;
-  max-width: 600px;
+  max-width: auto;
 }
 
 .cards {
