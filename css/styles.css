@@ -22,8 +22,6 @@ body {
   background-repeat: no-repeat;
   padding: 80px 50px;
   border-radius: 30px;
-  width: 1.33;
-  height: 1;
 }
 
 /* Título principal */
@@ -405,11 +403,8 @@ body {
 }
 
 .img-contenido {
-  width: 1.33;
-  height: 1;
-  border-radius: 20px; 
-  margin-top: 15px; 
-  margin-bottom: 10px;
+  width: auto;
+  height: auto;
 }
 
 .cards {

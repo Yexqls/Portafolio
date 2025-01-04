@@ -11,7 +11,13 @@
   <link rel="icon" type="image/webp" sizes="16x16" href="img/icono.webp">
   <link rel="icon" type="image/webp" sizes="32x32" href="img/icono.webp">
   <link rel="icon" href="img/icono.webp">
+
+  <!-- Preload de imágenes -->
+  <link rel="preload" as="image" href="/img/yo.webp" />
+  <link rel="preload" as="image" href="img/oc_biofisica.webp" />
+  <link rel="preload" as="image" href="https://www.masterseosem.com/images/etiquetas-html.webp" />
 </head>
+
 
 <body>
   <div class="main-section section-one">
@@ -24,7 +30,7 @@
 
     <div class="img-fondo">
       <div class="content-wrapper">
-        <img src="/img/yo.webp" alt="Foto de perfil" class="profile-picture" rel="preload"/>
+        <img src="/img/yo.webp" alt="Foto de perfil" class="profile-picture" loading="lazy" />
         <div class="description-text">
           <h1 class="section-title">Algo de mí...</h1>
           <p>
@@ -82,7 +88,7 @@
       <h1 class="title">Proyectos</h1>
       <div class="cards">
         <div class="card">
-          <img src="img/oc_biofisica.webp" alt="Pagina OC" rel="preload" class="img-contenido">
+          <img src="img/oc_biofisica.webp" alt="Pagina OC" class="img-contenido" loading="lazy">
           <div class="contenido text-pro highlight">
             Plataforma OC
           </div>
@@ -109,7 +115,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="https://www.masterseosem.com/images/etiquetas-html.webp" rel="preload" alt="Hmtl" class="img-contenido">
+          <img src="https://www.masterseosem.com/images/etiquetas-html.webp" alt="Hmtl" class="img-contenido" loading="lazy">
           <div class="contenido text-pro highlight">
             NA
           </div>
@@ -161,7 +167,7 @@
       <h1 class="title" style="color: white;">Redes</h1>
       <div class="botones-alineacion">
         <a href="https://www.linkedin.com/in/yucli-emmanuel-baza-ortu%C3%B1o-b813912a1/" target="_blank"
-          style="max-width: 1.33;">
+          style="max-width: 600px;">
           <button style="border: 4px solid #7c3aed;" class=" fa-linkedin-ico icono"><i
               class="fa-brands fa-linkedin"></i>
             Linkedin</button></a>
@@ -169,7 +175,7 @@
           <button style="border: 4px solid #7c3aed;" class="fa-github-ico icono"><i class="fa-brands fa-github"></i>
             GitHub </button></a>
         <a href="https://wa.me/524351218024?text=Hola%2C%20estoy%20interesado%20en%20tus%20servicios%21" target="_blank"
-          style="max-width: 1.33;">
+          style="max-width: 600px;">
           <button style="border: 4px solid #7c3aed;" class="fa-square-whatsapp-ico icono"><i
               class="fa-brands fa-square-whatsapp"></i>
             WhatsApp</button></a>
