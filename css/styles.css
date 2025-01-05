@@ -107,7 +107,7 @@ body {
 /* Encabezado */
 .title {
   font-size: 2.5rem;
-  font-family: "Sharp Sans Extrabold", sans-serif; /* Aplica la fuente personalizada */
+  font-family: "Sharp Sans Extrabold", sans-serif;
   color: #1f2937;
   margin-bottom: 20px;
   margin-left: 30px;
@@ -403,8 +403,8 @@ body {
 }
 
 .img-contenido {
-  width: auto; /* Ajusta esto según lo que necesites */
-  height: auto; /* Mantén la relación de aspecto automáticamente */
+  width: auto;
+  height: auto; 
   border-radius: 20px;
   margin-top: 15px;
   margin-bottom: 10px;
@@ -559,7 +559,7 @@ body {
   .img-fondo {
     width: 100%;
     height: auto;
-    max-width: 390px; /* Ajuste para evitar que la imagen crezca demasiado en pantallas grandes */
+    max-width: 390px; 
     padding: 50px 20px;
   }
 
