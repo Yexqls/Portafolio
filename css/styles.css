@@ -573,6 +573,10 @@ body {
   .icono{
     font-size: 16px;
   }
+
+  .center{
+    text-align: center;
+  }
 }
 
 @font-face {
