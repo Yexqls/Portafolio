@@ -473,6 +473,7 @@ body {
   .section-title {
     text-align: center;
     display: flow-root;
+    font-size: 2.4rem;
   }
 
   .profile-img {
@@ -486,6 +487,7 @@ body {
     text-align: center;
     display: flow-root;
     margin-left: 0px;
+    font-size: 2.4rem;
   }
 
   .container {
