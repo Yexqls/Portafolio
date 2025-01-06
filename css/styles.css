@@ -171,7 +171,7 @@ body {
 }
 
 .descripcion-pro {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   text-align: left;
   font-size: 20px;
 }
@@ -511,10 +511,9 @@ body {
   }
 
   .tec {
-    display: flex;
     flex-direction: column;
     font-size: 15px;
-    text-align: center;
+    align-items: normal;
   }
 
   .descripcion {
