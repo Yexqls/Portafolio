@@ -319,9 +319,9 @@ body {
 }
 
 .fa-file-lines-ico:hover {
-  background-color: #aaa;
+  background-color: #E0A800  ;
   color: white;
-  box-shadow: 0 0 15px #aaa, 0 0 45px #aaa, 0 0 75px #aaa, 0 0 115px #aaa;
+  box-shadow: 0 0 15px #E0A800  , 0 0 45px #E0A800  , 0 0 75px #E0A800  , 0 0 115px #E0A800  ;
 }
 
 .fa-bootstrap-ico:hover {
