@@ -98,12 +98,6 @@ body {
   padding: 20px;
 }
 
-.see-boton {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 /* Encabezado */
 .title {
   font-size: 2.5rem;
