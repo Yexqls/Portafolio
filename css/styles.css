@@ -83,14 +83,12 @@ body {
 
 .section-one {
   background: linear-gradient(to bottom, #f5f3ff, #e6e0f8, #e7e1f8);
-  padding: 20px;
+  padding: 10px 15px 0;
 }
 
 .section-two {
   background: linear-gradient(to top, #e6d6ff, #e7e1f8);
-  padding: 20px;
-  padding-bottom: 120px;
-  padding-top: 2rem;
+  padding: 3rem 20px 120px;
 }
 
 .section-three {
