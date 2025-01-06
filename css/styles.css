@@ -576,6 +576,10 @@ body {
     width: auto;
     height: 130px;
   }
+  
+  .icono{
+    font-size: 20px;
+  }
 }
 
 @font-face {
