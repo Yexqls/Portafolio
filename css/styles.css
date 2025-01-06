@@ -297,7 +297,7 @@ body {
     0 0 75px rgb(50, 205, 50), 0 0 115px rgb(0, 204, 255);
 }
 
-.fa-square-whatsapp-ico:hover {
+.fa-whatsapp-ico:hover {
   background-color: #22d473;
   color: white;
   box-shadow: 0 0 15px #22d473, 0 0 45px #22d473, 0 0 75px #22d473,
@@ -318,7 +318,7 @@ body {
     0 0 115px #006dbe;
 }
 
-.fa-file-lines-ico:hover {
+.fa-file-arrow-down-ico:hover {
   background-color: #E0A800  ;
   color: white;
   box-shadow: 0 0 15px #E0A800  , 0 0 45px #E0A800  , 0 0 75px #E0A800  , 0 0 115px #E0A800  ;
