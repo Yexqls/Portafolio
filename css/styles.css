@@ -490,7 +490,6 @@ body {
 
   .container {
     padding: 15px;
-    max-width: 390px
   }
 
   .botones-alineacion {
@@ -576,11 +575,6 @@ body {
   .img-contenido {
     width: auto;
     height: 130px;
-  }
-
-  .section-one{
-    padding: 0;
-
   }
 }
 
