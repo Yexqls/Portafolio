@@ -14,6 +14,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link href="css/styles.css" rel="stylesheet">
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+
   <link rel="icon" href="img/icono.webp" type="image/webp">
 
   <link rel="preload" href="img/codigo-fondo.webp" as="image">
@@ -34,7 +37,7 @@
       </div>
     </h1>
 
-    <div class="img-fondo">
+    <div class="img-fondo" data-aos="fade-up">
       <div class="content-wrapper">
         <img src="/img/Perfil.webp" alt="Foto de perfil" class="profile-picture" style="max-width: 200px;" />
         <div class="description-text">
@@ -54,7 +57,7 @@
       </div>
     </div>
     <!-- Experiencia -->
-    <div class="container mt-5">
+    <div class="container mt-5" data-aos="fade-up">
       <div class="title">Experiencia</div>
       <div class="text">
         <div class="tec">
@@ -90,7 +93,7 @@
       </div>
     </div>
     <!-- Proyectos -->
-    <div class="container mt-5">
+    <div class="container mt-5" data-aos="fade-up">
       <h1 class="title">Proyectos</h1>
       <div class="cards">
         <div class="card">
@@ -147,7 +150,7 @@
   </div>
   <!-- Skills -->
   <div class="section-two">
-    <div class="container">
+    <div class="container" data-aos="fade-up">
       <h1 class="title">Skills</h1>
       <div class="botones-alineacion">
         <button class="fa-php-ico icono"> <i class="fa-brands fa-php"></i>PHP
@@ -203,19 +206,29 @@
       </div>
     </div>
   </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  
+  <script defer>
+    const dots = document.querySelectorAll('.dot');
+    let current = 0;
+
+    setInterval(() => {
+      /* recorre los elementos */
+      dots.forEach((dot, index) => {
+        dot.style.opacity = index === current ? '1' : '0';
+      });
+      current = (current + 1) % dots.length;
+    }, 300);
+
+    // Inicializar AOS
+    AOS.init({
+      duration: 1000, 
+      easing: 'ease-in-out', 
+      once: true, 
+      offset: 100, 
+    });
+  </script>
 </body>
 
 </html>
-
-<script>
-  const dots = document.querySelectorAll('.dot');
-  let current = 0;
-
-  setInterval(() => {
-    /* recorre los elementos */
-    dots.forEach((dot, index) => {
-      dot.style.opacity = index === current ? '1' : '0';
-    });
-    current = (current + 1) % dots.length;
-  }, 300);
-</script>
