@@ -89,6 +89,7 @@ body {
 .section-two {
   background: linear-gradient(to top, #e6d6ff, #e7e1f8);
   padding: 3rem 20px 120px;
+  overflow: hidden;
 }
 
 .section-three {
