@@ -84,6 +84,7 @@ body {
 .section-one {
   background: linear-gradient(to bottom, #f5f3ff, #e6e0f8, #e7e1f8);
   padding: 10px 15px 0;
+  overflow: hidden;
 }
 
 .section-two {
@@ -95,6 +96,8 @@ body {
 .section-three {
   background-color: #000c20;
   padding: 20px;
+  overflow: hidden;
+
 }
 
 /* Encabezado */
