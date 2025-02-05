@@ -16,7 +16,7 @@ body {
 }
 
 .img-fondo {
-  background-image: url("../img/codigo-fondo.webp");
+  background: linear-gradient(to bottom, #6C24DC, #955FE8, #BD9BF3);
   background-size: cover; /* Escala para cubrir todo */
   background-position: center;
   background-repeat: no-repeat;
@@ -37,8 +37,8 @@ body {
 /* Imagen de perfil */
 .profile-picture {
   border-radius: 15px;
-  width: 240px;
-  height: 240px;
+  width: 290px;
+  height: 290px;
   object-fit: cover;
 }
 
