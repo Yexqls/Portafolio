@@ -82,18 +82,12 @@ body {
 }
 
 .section-one {
-  background: linear-gradient(to bottom, #f5f3ff, #e6e0f8, #e7e1f8);
+  background: linear-gradient(to bottom, #ffffff, #E6D6FF, #BD9BF3, #955FE8, #6C24DC);
   padding: 10px 15px 0;
   overflow: hidden;
 }
 
 .section-two {
-  background: linear-gradient(to top, #e6d6ff, #e7e1f8);
-  padding: 3rem 20px 120px;
-  overflow: hidden;
-}
-
-.section-three {
   background-color: #000c20;
   padding: 20px;
   overflow: hidden;
@@ -160,7 +154,7 @@ body {
   align-items: center;
   font-weight: bold;
   margin-bottom: 10px;
-  color: #5a2a9e;
+  color: #6D25DC; 
 }
 .subtitulo {
   font-family: "Sharp Sans Extrabold", sans-serif;
@@ -430,12 +424,10 @@ body {
 @media (max-width: 1380px) {
   .profile-picture {
     position: relative;
-    top: 0;
-    left: 0;
+    margin: 0;
     transform: none;
-    width: 200px;
-    height: 200px;
-    margin-bottom: 20px;
+    width: 270px;
+    height: 270px;
   }
 
   .content-wrapper {
