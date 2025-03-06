@@ -428,6 +428,11 @@ body {
   transition: opacity 0.3s;
 }
 
+.center {
+  margin-top: auto;
+  text-align: center;
+}
+
 @media (max-width: 1380px) {
   .profile-picture {
     position: relative;
@@ -575,9 +580,6 @@ body {
     font-size: 16px;
   }
 
-  .center {
-    text-align: center;
-  }
 }
 
 @font-face {
