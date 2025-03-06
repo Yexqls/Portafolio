@@ -339,7 +339,9 @@ body {
   transition: transform 0.3s ease;
   border-radius: 10px;
   /* Transición suave */
-  box-shadow: 0px 4px 15px #5a2a9e;
+  box-shadow: 4px 4px 6px 0 #5a2a9e80;
+  /*  box-shadow: 0 4px 6px 0 #5a2a9e80;
+*/
 }
 
 .card:hover {
