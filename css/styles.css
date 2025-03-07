@@ -175,7 +175,7 @@ body {
 .descripcion-pro {
   margin-bottom: 20px;
   text-align: left;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 /* Personalización del scrollbar */
@@ -435,6 +435,32 @@ body {
   text-align: center;
 }
 
+/*felcha ocultar y mostrar*/
+.tecnologias-container {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  opacity: 0;
+}
+
+.tecnologias-container.show {
+  max-height: 500px; 
+  opacity: 1;
+}
+
+.toggle-btn {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #333;
+}
+
+.toggle-btn i {
+  transition: transform 0.3s ease;
+}
+
+
 @media (max-width: 1380px) {
   .profile-picture {
     position: relative;
@@ -526,7 +552,7 @@ body {
   }
 
   .descripcion {
-    font-size: 12px;
+    font-size: 13px;
   }
 
   .text-pro {
@@ -570,7 +596,7 @@ body {
   }
 
   .descripcion-pro {
-    font-size: 12px;
+    font-size: 13px;
   }
 
   .img-contenido {
@@ -581,7 +607,6 @@ body {
   .icono {
     font-size: 16px;
   }
-
 }
 
 @font-face {
