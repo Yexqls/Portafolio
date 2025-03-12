@@ -470,6 +470,7 @@ body {
   opacity: 1;
 }
 
+/* RESPONSIVIDAD */
 @media (max-width: 1380px) {
   .profile-picture {
     position: relative;
@@ -493,6 +494,7 @@ body {
     padding-right: 30px;
   }
 }
+
 /* RESPONSIVIDAD */
 @media screen and (max-width: 768px) {
   .content {
