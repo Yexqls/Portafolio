@@ -330,16 +330,14 @@ body {
     0 0 105px #7011ef;
 }
 
-
-
 .card {
   flex: 50%;
-margin: 30px;
+  margin: 30px;
   padding: 20px;
   display: flex;
   flex-direction: column;
   transition: transform 0.3s ease;
-  border-radius: 10px;
+  border-radius: 20px;
   /* Transición suave */
   box-shadow: 4px 4px 6px 0 #5a2a9e80;
   /*  box-shadow: 0 4px 6px 0 #5a2a9e80;
@@ -360,10 +358,19 @@ margin: 30px;
 .botones-container {
   margin-top: auto;
   padding-top: 10px;
-  border-top: 1px solid #ccc; 
+  border-top: 1px solid #ccc;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+/*BOtones carusel*/
+.custom-flecha {
+  font-size: 2rem;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 100%;
 }
 
 .tecnologias {
