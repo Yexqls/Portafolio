@@ -332,14 +332,12 @@ body {
 
 .card {
   flex: 50%;
-  margin-right: 40px;
-  margin-left: 30px;
-  margin-bottom: 30px;
-  padding: 30px;
+  margin: 30px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   transition: transform 0.3s ease;
-  border-radius: 10px;
+  border-radius: 20px;
   /* Transición suave */
   box-shadow: 4px 4px 6px 0 #5a2a9e80;
   /*  box-shadow: 0 4px 6px 0 #5a2a9e80;
@@ -354,6 +352,25 @@ body {
   /*   flex-grow: 1;
  */
   flex-shrink: 1;
+}
+
+/*Botones del card*/
+.botones-container {
+  margin-top: auto;
+  padding-top: 10px;
+  border-top: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*BOtones carusel*/
+.custom-flecha {
+  font-size: 2rem;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 100%;
 }
 
 .tecnologias {
@@ -405,7 +422,6 @@ body {
 .img-contenido {
   width: auto;
   height: auto;
-  border-radius: 20px;
   margin-top: 15px;
   margin-bottom: 10px;
 }
@@ -445,7 +461,7 @@ body {
   font-family: "Sharp Sans", sans-serif;
   background-color: #ffffff;
   color: #4d11b6;
-  border: 2px solid #4d11b6;
+  border: 1px solid #4d11b6;
   border-radius: 32px;
   padding: 12px 26px;
   cursor: pointer;
