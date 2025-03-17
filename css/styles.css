@@ -154,6 +154,13 @@ body {
   font-weight: bold;
 }
 
+.title-pie {
+  font-size: 1rem;
+  font-family: "Sharp Sans ", sans-serif;
+  color: white;
+  margin-top: 40px;
+}
+
 .tec {
   display: flex;
   justify-content: space-between;
@@ -366,11 +373,11 @@ body {
 
 /*BOtones carusel*/
 .custom-flecha {
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: white;
   background: rgba(0, 0, 0, 0.5);
   padding: 10px;
-  border-radius: 100%;
+  border-radius: 10%;
 }
 
 .tecnologias {
@@ -552,7 +559,11 @@ body {
   }
 
   .descripcion {
-    font-size: 12px;
+    font-size: 13px;
+  }
+
+  .descripcion-pro {
+    font-size: 13px;
   }
 
   .text-pro {
@@ -595,9 +606,7 @@ body {
     padding: 8px 20px;
   }
 
-  .descripcion-pro {
-    font-size: 12px;
-  }
+
 
   .img-contenido {
     width: auto;
@@ -606,6 +615,10 @@ body {
 
   .icono {
     font-size: 16px;
+  }
+
+  .title-pie{
+    font-size: 12px;
   }
 }
 
