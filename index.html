@@ -94,7 +94,7 @@
       <div class="cards" data-aos="zoom-in">
         <div class="card">
           <!-- Carrusel de imágenes -->
-          <div id="oc" class="carousel slide" data-bs-ride="carousel">
+          <div id="oc" class="carousel slide">
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img src="img/oc_biofisica.webp" class="d-block w-100 img-contenido" alt="Pagina OC">
@@ -148,7 +148,7 @@
 
         <div class="card">
           <!-- Carrusel de imágenes -->
-          <div id="bob" class="carousel slide" data-bs-ride="carousel">
+          <div id="bob" class="carousel slide">
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img src="img/bob.webp" class="d-block w-100 img-contenido" alt="Pagina OC">
@@ -196,7 +196,7 @@
       <div class="cards" data-aos="fade-up">
         <div class="card">
           <!-- Carrusel de imágenes -->
-          <div id="gestor" class="carousel slide" data-bs-ride="carousel">
+          <div id="gestor" class="carousel slide">
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img src="img/gestor.webp" class="d-block w-100 img-contenido" alt="Pagina OC">
@@ -239,7 +239,7 @@
           </div>
         </div>
         <div class="card">
-          <div id="banco" class="carousel slide" data-bs-ride="carousel">
+          <div id="banco" class="carousel slide">
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img src="img/banco1.webp" class="d-block w-100 img-contenido" alt="Pagina OC">
@@ -341,13 +341,12 @@
       </div>
       <div class="botones-alineacion" data-aos="fade-up">
         <p class="title-pie">
-          © 2025 Yucli Emmanuel        
+          © 2025 Yucli Emmanuel
         </p>
       </div>
     </div>
   </div>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 
   <script defer>
     const dots = document.querySelectorAll('.dot');
@@ -361,17 +360,19 @@
       current = (current + 1) % dots.length;
     }, 300);
 
-    // Inicializar AOS
-    AOS.init({
-      duration: 1000,
-      easing: 'ease-in-out',
-      once: true,
-      offset: 100,
-    });
-
-
   </script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" defer></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      AOS.init({
+        duration: 1000,
+        easing: 'ease-in-out',
+        once: true,
+        offset: 100,
+      });
+    });
+  </script>
 
 </body>
 
