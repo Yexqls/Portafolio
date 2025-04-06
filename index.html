@@ -55,11 +55,12 @@
               <i class="fa-brands fa-linkedin icon-llamativo"></i></a>
             <a href="https://github.com/Yexqls" target="_blank">
               <i class="fa-brands fa-github icon-llamativo"></i></a>
-            <a href="https://wa.me/524351218024?text=Hola%2C%20estoy%20interesado%20en%20tus%20servicios%21" target="_blank">
+            <a href="https://wa.me/524351218024?text=Hola%2C%20estoy%20interesado%20en%20tus%20servicios%21"
+              target="_blank">
               <i class="fa-brands fa-whatsapp icon-llamativo"></i></a>
           </footer>
-          
-          
+
+
         </div>
       </div>
     </div>
@@ -346,35 +347,41 @@
       </div>
     </div>
   </div>
-  <!-- Redes -->
+  <!-- Correo -->
   <div class="section-two">
-    <div class="container mt-5 mb-5" style="background-color: #000c20; box-shadow: none;">
-      <h1 class="title" style="color: white;">Redes</h1>
-      <form action="https://formsubmit.co/1fd8896802ef3afa45e6559453bc4299" method="POST">
-        <input type="text" name="name" placeholder="Tu nombre" required>
-        <input type="email" name="email" placeholder="Tu correo" required>
-        <textarea name="message" placeholder="Tu mensaje" required></textarea>
-        <!-- Opcionales -->
-        <input type="hidden" name="_captcha" value="false">
-        <!-- Redirige después del envío -->
-        <input type="hidden" name="_next" value="https://yucliemmanuel.vercel.app/?sent=true">
-        <button type="submit">Enviar</button>
-      </form>
-  
-      <div class="botones-alineacion" data-aos="fade-up">
-        <p class="title-pie">
-          © 2025 Yucli Emmanuel
-        </p>
-      </div>
+
+      <div class="container mt-5 mb-5" style="background-color: #000c20; box-shadow: none;">
+        <h1 class="title" style="color: white;">Redes</h1>
+        <form action="https://formsubmit.co/1fd8896802ef3afa45e6559453bc4299" method="POST" class="contact-form" data-aos="fade-up">
+          <input type="text" name="name" placeholder="Tu nombre" required class="form-input">
+          <input type="email" name="email" placeholder="Tu correo" required class="form-input">
+          <textarea name="message" placeholder="Tu mensaje" required class="form-input"></textarea>
+          <!-- Opcionales -->
+          <input type="hidden" name="_captcha" value="false">
+          <!-- Redirige después del envío -->
+          <input type="hidden" name="_next" value="https://yucliemmanuel.vercel.app/?sent=true">
+          <div style="justify-content: center; display: flex;">
+            <button type="submit" class="submit-btn">Enviar</button>
+
+          </div>
+        </form>
+        
+
+        <div class="botones-alineacion" data-aos="fade-up">
+          <p class="title-pie">
+            © 2025 Yucli Emmanuel
+          </p>
+        </div>
     </div>
+
   </div>
-  
+
 
 
   <script defer>
     const dots = document.querySelectorAll('.dot');
     let current = 0;
-  
+
     setInterval(() => {
       /* recorre los elementos */
       dots.forEach((dot, index) => {
@@ -383,10 +390,10 @@
       current = (current + 1) % dots.length;
     }, 300);
   </script>
-  
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" defer></script>
-  
+
   <script>
     document.addEventListener("DOMContentLoaded", function () {
       AOS.init({
@@ -397,7 +404,7 @@
       });
     });
   </script>
-  
+
   <!-- Script para SweetAlert -->
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <script>
@@ -409,10 +416,14 @@
         title: '¡Mensaje enviado!',
         text: 'Gracias por contactarme. Te responderé pronto.',
         confirmButtonColor: '#00ffcc'
+      }).then(() => {
+        // Después de mostrar la alerta, eliminamos el parámetro 'sent' de la URL
+        history.replaceState(null, '', window.location.pathname);
       });
     }
   </script>
-  
+
+
 
 </body>
 
