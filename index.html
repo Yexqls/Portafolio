@@ -56,78 +56,97 @@
     <!-- Experiencia -->
     <div class="container mt-5" data-aos="fade-up">
       <div class="title">Experiencia</div>
-      <div class="text">
-        <div class="tec">
-          <span>Centro de Innovación y Desarrollo Agroalimentario de Michoacán</span>
-          <span> Junio - Diciembre 2024</span>
-        </div>
-        <div class="subtitulo highlight">Plataforma OC (Organismo certificador)</div>
-        <div class="descripcion">
-          Participé en el desarrollo y optimización de una nueva página web para CIDAM, colaborando en la migración de
-          su
-          antigua plataforma al framework Laravel. Rediseñé la interfaz de cada módulo asignado para cumplir con
-          estándares modernos de desarrollo y mejorar la usabilidad. También optimizamos procesos clave, como la
-          certificación de mezcal, y actualizamos la base de datos para aumentar su eficiencia y escalabilidad. Utilicé
-          librerías especializadas como FormValidation, SweetAlert2 y DOMPDF, logrando una experiencia de usuario más
-          fluida y funcional. Además, reestructuramos documentos, vistas y notificaciones, lo que resultó en un sitio
-          web
-          más ágil y eficiente.
-        </div>
-        <a href="http://oc.biofisica.com.mx/login" target="_blank" rel="noopener noreferrer"><button class="up">Visitar
-            sitio</button></a>
-        <div style="padding-top: 20px;">
-          <button class="tecnologias"><i class="fa-brands fa-laravel"></i>Laravel</button>
-          <button class="tecnologias"><i class="fa-brands fa-php"></i>php</button>
-          <button class="tecnologias"><i class="fa-solid fa-database"></i>SQL</button>
-          <button class="tecnologias"><i class="fa-brands fa-node-js"></i>Node</button>
-          <button class="tecnologias"><i class="fa-brands fa-bootstrap"></i>Bosstrap</button>
-          <button class="tecnologias"><i class="fa-brands fa-html5"></i>HTML</button>
-          <button class="tecnologias"><i class="fa-brands fa-css3"></i>CSS</button>
-          <button class="tecnologias"><i class="fa-brands fa-js"></i>JS</button>
-          <button class="tecnologias"><i class="fa-solid fa-code"></i></i>Jquery</button>
-        </div>
-      </div>
+      <article class="text">
+        <header class="tec">
+          <h3>Centro de Innovación y Desarrollo Agroalimentario de Michoacán</h3>
+          <time datetime="2024-06">Jun - Dic 2024</time>
+        </header>
+
+        <h4 class="subtitulo ">Plataforma OC (Organismo Certificador)</h4>
+
+        <section class="descripcion">
+          <p>
+            Participé en el desarrollo y optimización de una nueva página web para CIDAM, colaborando en la migración de
+            su antigua plataforma al framework Laravel. Rediseñé la interfaz de cada módulo asignado para cumplir con
+            estándares modernos de desarrollo y mejorar la usabilidad.
+          </p>
+          <p>
+            También optimizamos procesos clave, como la certificación de mezcal, y actualizamos la base de datos para
+            aumentar su eficiencia y escalabilidad. Utilicé librerías especializadas como FormValidation, SweetAlert2 y
+            DOMPDF, logrando una experiencia de usuario más fluida y funcional.
+          </p>
+          <p>
+            Además, reestructuramos documentos, vistas y notificaciones, lo que resultó en un sitio web más ágil y
+            eficiente.
+          </p>
+        </section>
+
+        <nav>
+          <a href="http://oc.biofisica.com.mx/login" target="_blank" rel="noopener noreferrer">
+            <button class="up">Visitar sitio <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+          </a>
+        </nav>
+
+        <footer style="padding-top: 20px;">
+          <span class="tecnologias"><i class="fa-brands fa-laravel"></i> Laravel</span>
+          <span class="tecnologias"><i class="fa-brands fa-php"></i> PHP</span>
+          <span class="tecnologias"><i class="fa-solid fa-database"></i> SQL</span>
+          <span class="tecnologias"><i class="fa-brands fa-node-js"></i> Node</span>
+          <span class="tecnologias"><i class="fa-brands fa-bootstrap"></i> Bootstrap</span>
+          <span class="tecnologias"><i class="fa-brands fa-html5"></i> HTML</span>
+          <span class="tecnologias"><i class="fa-brands fa-css3"></i> CSS</span>
+          <span class="tecnologias"><i class="fa-brands fa-js"></i> JS</span>
+          <span class="tecnologias"><i class="fa-solid fa-code"></i> jQuery</span>
+        </footer>
+      </article>
+
     </div>
     <!-- Proyectos -->
     <div class="container mt-5" data-aos="fade-up">
       <h1 class="title">Proyectos</h1>
       <div class="cards" data-aos="zoom-in">
-        <div class="card">
+        <article class="card" aria-label="Proyecto: Plataforma OC CIDAM">
           <!-- Carrusel de imágenes -->
-          <div id="oc" class="carousel slide">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="img/oc_biofisica.webp" class="d-block w-100 img-contenido" alt="Pagina OC">
+          <section aria-label="Galería de la plataforma OC">
+            <div id="oc" class="carousel slide">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="img/oc_biofisica.webp" class="d-block w-100 img-contenido" alt="Página principal de OC">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/cidam2.webp" class="d-block w-100 img-contenido"
+                    alt="Vista adicional de la plataforma OC">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/cidam3.webp" class="d-block w-100 img-contenido" alt="Otra vista de la plataforma OC">
+                </div>
               </div>
-              <div class="carousel-item">
-                <img src="img/cidam2.webp" class="d-block w-100 img-contenido" alt="Otra imagen">
-              </div>
-              <div class="carousel-item">
-                <img src="img/cidam3.webp" class="d-block w-100 img-contenido" alt="Otra más">
-              </div>
+              <!-- Controles del carrusel -->
+              <button class="carousel-control-prev" type="button" data-bs-target="#oc" data-bs-slide="prev"
+                aria-label="Anterior">
+                <i class="fa-solid fa-chevron-left custom-flecha"></i>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#oc" data-bs-slide="next"
+                aria-label="Siguiente">
+                <i class="fa-solid fa-chevron-right custom-flecha"></i>
+              </button>
             </div>
-            <!-- Controles del carrusel -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#oc" data-bs-slide="prev">
-              <i class="fa-solid fa-chevron-left custom-flecha"></i>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#oc" data-bs-slide="next">
-              <i class="fa-solid fa-chevron-right custom-flecha"></i>
-            </button>
+          </section>
 
-          </div>
+          <!-- Contenido principal de la card -->
+          <section class="contenido text-pro highlight">
+            <h2>Plataforma OC CIDAM</h2>
 
-          <div class="contenido text-pro highlight">
-            Plataforma OC
-          </div>
-          <p class="descripcion-pro">Plataforma diseñada para la gestión, emisión de certificados de mezcal y
-            administración
-            de datos de clientes, tanto internos como externos de la empresa. Esta plataforma ofrece una experiencia
-            eficiente, segura y personalizada, optimizando procesos y facilitando el acceso a la información relevante
-            para cada usuario.</p>
+          </section>
+          <p class="descripcion-pro">
+            Plataforma diseñada para la gestión y emisión de certificados de mezcal, así como la administración de datos
+            de clientes. Brinda una experiencia eficiente, segura y personalizada, optimizando procesos y facilitando el
+            acceso a información relevante.
+          </p>
 
-          <!-- Contenedor para los botones -->
-          <div class="botones-container">
-            <div class="tecnologias-container">
+          <!-- Tecnologías utilizadas -->
+          <section class="botones-container">
+            <div class="tecnologias-container" aria-label="Tecnologías utilizadas">
               <button class="tecnologias"><i class="fa-brands fa-laravel"></i> Laravel</button>
               <button class="tecnologias"><i class="fa-brands fa-php"></i> PHP</button>
               <button class="tecnologias"><i class="fa-solid fa-database"></i> SQL</button>
@@ -138,47 +157,49 @@
               <button class="tecnologias"><i class="fa-brands fa-js"></i> JS</button>
               <button class="tecnologias"><i class="fa-solid fa-code"></i> jQuery</button>
             </div>
+
             <div class="center">
               <a href="http://oc.biofisica.com.mx/login" target="_blank" rel="noopener noreferrer">
-                <button class="up">Visitar sitio</button>
+                <button class="up">Visitar sitio <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
               </a>
             </div>
-          </div>
-        </div>
-
-        <div class="card">
+          </section>
+        </article>
+        <article class="card" aria-label="Proyecto: Hamburguesas Bob">
           <!-- Carrusel de imágenes -->
-          <div id="bob" class="carousel slide">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="img/bob.webp" class="d-block w-100 img-contenido" alt="Pagina OC">
+          <section aria-label="Galería de Hamburguesas Bob">
+            <div id="bob" class="carousel slide">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="img/bob.webp" class="d-block w-100 img-contenido" alt="Vista principal del menú Hamburguesas Bob">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/bob_2.webp" class="d-block w-100 img-contenido" alt="Vista alternativa del menú Hamburguesas Bob">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/bob_3.webp" class="d-block w-100 img-contenido" alt="Vista de la ubicacion de Hamburguesas Bob">
+                </div>
               </div>
-              <div class="carousel-item">
-                <img src="img/bob_2.webp" class="d-block w-100 img-contenido" alt="Otra imagen">
-              </div>
-              <div class="carousel-item">
-                <img src="img/bob_3.webp" class="d-block w-100 img-contenido" alt="Otra más">
-              </div>
+              <!-- Controles del carrusel -->
+              <button class="carousel-control-prev" type="button" data-bs-target="#bob" data-bs-slide="prev" aria-label="Anterior">
+                <i class="fa-solid fa-chevron-left custom-flecha"></i>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#bob" data-bs-slide="next" aria-label="Siguiente">
+                <i class="fa-solid fa-chevron-right custom-flecha"></i>
+              </button>
             </div>
-            <!-- Controles del carrusel -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#bob" data-bs-slide="prev">
-              <i class="fa-solid fa-chevron-left custom-flecha"></i>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#bob" data-bs-slide="next">
-              <i class="fa-solid fa-chevron-right custom-flecha"></i>
-            </button>
-          </div>
-          <div class="contenido text-pro highlight">
-            Hamburguesas Bob
-          </div>
-          <p class="descripcion-pro">Página estática para un puesto de hamburguesas, tacos y tortas, con un diseño
+          </section>
+          <section class="contenido text-pro highlight">
+            <h2> Hamburguesas Bob </h2>
+          </section>
+          <p class="descripcion-pro">Página estática para un puesto de comida rapida, tacos y tortas, con un diseño
             sencillo y atractivo. Muestra el menú detallado con opciones y sus ingredientes, y una interfaz fácil de
             navegar. Al final, botones de acción permiten contactar rápidamente por WhatsApp o Facebook para realizar
             pedidos y recibir atención personalizada.</p>
-          <div class="botones-container">
+          <section class="botones-container">
             <div class="tecnologias-container">
               <button class="tecnologias"><i class="fa-solid fa-shuttle-space"></i>Astro</button>
-              <button class="tecnologias"><i class="fa-solid fa-wind"></i></i>Tailwind</button>
+              <button class="tecnologias"><i class="fa-solid fa-wind"></i>Tailwind</button>
               <button class="tecnologias"><i class="fa-brands fa-html5"></i>HTML</button>
               <button class="tecnologias"><i class="fa-brands fa-css3"></i>CSS</button>
               <button class="tecnologias"><i class="fa-brands fa-js"></i>JS</button>
@@ -186,12 +207,12 @@
 
             </div>
             <div class="center">
-              <a href="https://hamburgueseria-bob.vercel.app/" target="_blank" rel="noopener noreferrer"><button
-                  class="up">Visitar
-                  sitio</button></a>
+              <a href="https://hamburgueseria-bob.vercel.app/" target="_blank" rel="noopener noreferrer">
+                <button class="up">Visitar sitio <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+              </a>
             </div>
-          </div>
-        </div>
+          </section>
+        </article>
       </div>
       <div class="cards" data-aos="fade-up">
         <div class="card">
