@@ -504,7 +504,7 @@ a:hover .icon-llamativo {
 
 .contact-form input:focus,
 .contact-form textarea:focus {
-  border-color: #00ffcc; /* Cambia el borde al enfocar */
+  border-color: #a369f0; /* Cambia el borde al enfocar */
   background-color: #fff;
   outline: none;
 }
@@ -522,7 +522,7 @@ a:hover .icon-llamativo {
 }
 
 .submit-btn:hover {
-  background-color: #00e6b8;
+  background-color: #9f86f8;
   transform: scale(1.05); /* Efecto de agrandamiento al pasar el mouse */
 }
 
