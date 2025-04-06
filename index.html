@@ -356,12 +356,11 @@
         <textarea name="message" placeholder="Tu mensaje" required></textarea>
         <!-- Opcionales -->
         <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_next" value="https://yucliemmanuel.vercel.app/">
-      
+        <!-- Redirige después del envío -->
+        <input type="hidden" name="_next" value="https://yucliemmanuel.vercel.app/?sent=true">
         <button type="submit">Enviar</button>
       </form>
-      
-
+  
       <div class="botones-alineacion" data-aos="fade-up">
         <p class="title-pie">
           © 2025 Yucli Emmanuel
@@ -369,6 +368,7 @@
       </div>
     </div>
   </div>
+  
 
 
   <script defer>
