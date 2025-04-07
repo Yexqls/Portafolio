@@ -476,6 +476,23 @@ a:hover .icon-llamativo {
   padding-bottom: 20px;
 }
 
+.bullets {
+  list-style: none; /* Oculta la viñeta original */
+  padding-left: 1em;
+}
+
+.bullets li {
+  position: relative;
+  margin-bottom: 0.5em;
+}
+
+.bullets li::before {
+  content: "•"; /* Puedes usar otro símbolo o emoji si quieres */
+  position: absolute;
+  left: -1em;
+  color: rgb(183, 0, 255); /* Cambia el color de la viñeta aquí */
+  font-size: 1.2em;
+}
 
 
 
