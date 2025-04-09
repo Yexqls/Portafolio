@@ -174,17 +174,36 @@ body {
   font-family: "Sharp Sans Extrabold", sans-serif;
   margin-bottom: 10px;
 }
-.icon-llamativo {
-  font-size: 24px; /* tamaño más grande */
-  margin-right: 8px;
-  color: #000000;
-  transition: transform 0.3s ease, color 0.3s ease;
+.boton-icono {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  margin: 6px;
+  border-radius: 15px; /* para hacerlo circular */
+  background-color: black;
+  text-decoration: none;
+  border: 2px solid black;
+  color: white;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-a:hover .icon-llamativo {
-  transform: scale(1.2) rotate(5deg);
-  color: #7c3aed;
+.boton-icono i {
+  font-size: 22px;
+  transition: color 0.3s ease;
 }
+
+.boton-icono:hover {
+  background-color: white;
+  color: black;
+}
+
+.boton-icono:hover i {
+  color: black;
+}
+
+
 
 .descripcion {
   margin-bottom: 20px;
@@ -688,7 +707,13 @@ a:hover .icon-llamativo {
     padding: 8px 20px;
   }
 
+  .footer-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
 
+  }
 
   .img-contenido {
     width: auto;

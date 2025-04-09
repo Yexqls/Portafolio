@@ -36,7 +36,7 @@
     <div class="img-fondo" data-aos="fade-up">
       <div class="content-wrapper">
         <img src="/img/Perfil.webp" alt="Foto de perfil" class="profile-picture"
-          style="max-width: 200px;" data-aos="fade-left" />
+          style="max-width: 200px;" />
         <div class="description-text">
           <title class="section-title">Algo de mí...</title>
           <p class="descripcion">
@@ -50,14 +50,18 @@
             conocimientos para desarrollar <span class="text-highlight">aplicaciones web</span> <span
               class="text-highlight">🖥️</span> impactantes.
           </div>
-          <footer class="social-footer">
-            <a href="https://www.linkedin.com/in/yucli-emmanuel-baza-ortu%C3%B1o-b813912a1/" target="_blank">
-              <i class="fa-brands fa-linkedin icon-llamativo"></i></a>
-            <a href="https://github.com/Yexqls" target="_blank">
-              <i class="fa-brands fa-github icon-llamativo"></i></a>
-            <a href="https://wa.me/524351218024?text=Hola%2C%20estoy%20interesado%20en%20tus%20servicios%21"
-              target="_blank">
-              <i class="fa-brands fa-whatsapp icon-llamativo"></i></a>
+          <footer class="footer-icons">
+            <a href="https://www.linkedin.com/in/yucli-emmanuel-baza-ortu%C3%B1o-b813912a1/" target="_blank" class="boton-icono">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            
+            <a href="https://github.com/Yexqls" target="_blank" class="boton-icono">
+              <i class="fa-brands fa-github"></i></a>
+            
+            <a href="https://wa.me/524351218024?text=Hola%2C%20estoy%20interesado%20en%20tus%20servicios%21" target="_blank" class="boton-icono">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            
           </footer>
         </div>
       </div>
@@ -71,7 +75,7 @@
           <p>Centro de Innovación y Desarrollo Agroalimentario de Michoacán</p>
           <time datetime="2024-06">Jun - Dic 2024</time>
         </header>
-        <h4 class="subtitulo highlight">Plataforma OC (Organismo Certificador)</h4>
+        <h4 class="subtitulo highlight">Plataforma OC CIDAM</h4>
         <section class="descripcion">
           <p>
             Participé en el desarrollo y optimización de una nueva página web para CIDAM, colaborando en la migración de
@@ -352,9 +356,12 @@
       <h1 class="title" style="color: white;">Contactar</h1>
       <form action="https://formsubmit.co/1fd8896802ef3afa45e6559453bc4299" method="POST" class="contact-form"
         data-aos="fade-up">
+        <div style="text-align: center; padding-bottom: 10px;">
+          <strong style="color: white;">!Listo para nuevos desafíos!</strong>
+        </div>
         <input type="text" name="name" placeholder="Tu nombre" required class="form-input">
         <input type="email" name="email" placeholder="Tu correo" required class="form-input">
-        <textarea name="message" placeholder="Tu mensaje" required class="form-input"></textarea>
+        <textarea name="message" placeholder="Escribe tu mensaje, te contactaré pronto" required class="form-input"></textarea>
         <input type="hidden" name="_captcha" value="false">
         <!-- Redirige después del envío -->
         <input type="hidden" name="_next" value="https://yucliemmanuel.vercel.app/?sent=true">
