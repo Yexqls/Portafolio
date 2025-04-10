@@ -15,6 +15,53 @@ body {
   overflow: hidden;
 }
 
+.workBadge {
+  position: relative;
+  background-color: rgba(91, 33, 182, 0.6); /* bg-purple-800/60 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(16px); /* backdrop-blur-lg */
+  border: 1px solid #a855f7; /* border-purple-500 */
+  padding: 0.25rem 1rem; /* py-1 px-4 */
+  border-radius: 1rem; /* rounded-2xl */
+  color: white; /* text-purple-300 */
+  font-size: 12px; /* text-xs */
+  max-width: 200px;
+  overflow: hidden; /* for the shine effect */
+
+}
+
+.workBadge::before {
+  animation: shine 2s ease-out infinite;
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100%;
+  background-image: linear-gradient(
+    120deg,
+    hsla(0, 0%, 100%, 0) 30%,
+    rgba(216, 180, 254, 0.5), /* light purple */
+    hsla(0, 0%, 100%, 0) 70%
+  );
+  top: 0;
+  left: -100px;
+  opacity: 0.6;
+}
+
+@keyframes shine {
+  0% {
+    left: -100px;
+  }
+  60% {
+    left: 100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+
 .img-fondo {
   background: linear-gradient(to bottom, #6c24dc, #955fe8, #bd9bf3);
   background-size: cover; /* Escala para cubrir todo */
@@ -26,7 +73,7 @@ body {
 
 /* Título principal */
 .main-title {
-  text-align: center;
+  text-align: left;
   font-size: 60px;
   padding: 10px;
   font-family: "YaroSt-Black", sans-serif;
@@ -37,9 +84,11 @@ body {
 /* Imagen de perfil */
 .profile-picture {
   border-radius: 15px;
-  width: 290px;
-  height: 290px;
-  object-fit: cover;
+  width: 250px;
+  height: 250px;
+  object-fit: contain;
+  rotate: -27deg;
+  filter: drop-shadow(0px 4px 15px rgba(197, 66, 223, 0.932));
 }
 
 /* Contenedor content-wrapper */
