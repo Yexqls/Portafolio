@@ -81,14 +81,32 @@ body {
 }
 
 /* Imagen de perfil */
+@keyframes pulseShadow {
+  0% {
+    filter: drop-shadow(0px 4px 10px rgba(197, 66, 223, 0.3));
+  }
+  50% {
+    filter: drop-shadow(0px 4px 25px rgba(197, 66, 223, 1));
+  }
+  100% {
+    filter: drop-shadow(0px 4px 10px rgba(197, 66, 223, 0.3));
+  }
+}
+
 .profile-picture {
   border-radius: 15px;
   width: 250px;
   height: 250px;
   object-fit: contain;
   rotate: -27deg;
-  filter: drop-shadow(0px 4px 15px rgba(197, 66, 223, 0.932));
+  animation: pulseShadow 2s infinite ease-in-out;
+  transition: transform 0.3s ease;
 }
+
+.profile-picture:hover {
+  transform: scale(1.05);
+}
+
 
 /* Contenedor content-wrapper */
 .content-wrapper {
@@ -163,9 +181,10 @@ body {
   padding: 30px;
   max-width: 1600px;
   margin: 0 auto;
-  box-shadow: 0 4px 6px rgba(247, 241, 241, 0.1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
   box-sizing: border-box;
   border-radius: 40px;
+  border: 1px solid #d5e4f8;
 }
 
 /* Flexbox para imagen y texto */
@@ -265,7 +284,7 @@ body {
 
 /* Barra navegadora base */
 .navbar-pill {
-  background-color: #1F2937;
+  background-color: #23272a;
   color: white;
   border-radius: 50px;
   padding: 0.5rem 1.5rem;
@@ -587,7 +606,7 @@ body {
 .contact-form {
   background-color: #1e2a47; /* Fondo oscuro para el formulario */
   padding: 20px;
-  border-radius: 8px;
+  border-radius: 40px;
   max-width: 600px;
   margin: 0 auto;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
