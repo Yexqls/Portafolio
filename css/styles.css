@@ -810,8 +810,8 @@ body {
 
   .navbar-nav .nav-link {
     padding: 0.25rem 4px;
-    font-size: 10px;
-  }
+/*     font-size: 10px;
+ */  }
 
   .navbar-nav .nav-item {
     margin: 0 2px; /* reducción máxima sin tocarse */
