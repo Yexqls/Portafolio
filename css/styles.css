@@ -285,11 +285,12 @@ body {
 /* Barra navegadora base */
 .navbar-pill {
   background-color: #23272a;
+  opacity: 0.9;
+  border: 1px solid #23272a;
   color: white;
   border-radius: 50px;
-  padding: 0.5rem 1.5rem;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   flex-wrap: wrap;
+
 }
 
 .navbar-nav .nav-link {
